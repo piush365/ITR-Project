@@ -10,7 +10,7 @@
 
 body {
   height: 100vh;
-  background-color: #1d0505;
+  background-color: #f0f0f0;
   display: flex;
   flex-direction: column;
 }
