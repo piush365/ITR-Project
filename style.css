@@ -150,8 +150,9 @@ body {
   transform: none;
 }
 
-.search-container i {
-  padding: 3.5px 8.5px 3.5px 8.5px;
+.search-container img {
+  width: max-content;
+  padding: 1px;
   border: none;
   border-radius: 0 3px 3px 0;
   background-color: #F5BD02;
@@ -163,11 +164,11 @@ body {
   background-color: transparent;
 }
 
-.search-container i:hover {
+.search-container img:hover {
   background-color: #f5bc028a;
 }
 
-.search-container i:active {
+.search-container img:active {
   transform: translateY(2px);
 }
 
