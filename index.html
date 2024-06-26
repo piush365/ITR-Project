@@ -16,18 +16,18 @@
 <body>
     <!-- title -->
     <div class="site-name-logo">
-        <img src="images/dd-logo.svg" alt="Site Logo" class="site-logo">
+        <img src="images/dd-logo.svg" alt="Site Logo" class="site-logo" id="logo">
         <span class="site-name">Diploma Dost</span>
     </div>
     <!-- navbar -->
     <nav class="navbar">
         <div class="gps-logo"></div>
         <ul class="menu">
-            <li class="menu-item">Home</li>
+            <li class="menu-item" id="home">Home</li>
             <li class="menu-item">
                 Branch
                 <ul class="dropdown">
-                    <li class="dropdown-item">CM</li>
+                    <li class="dropdown-item" id="cm">CM</li>
                     <li class="dropdown-item">IT</li>
                     <li class="dropdown-item">ENTC</li>
                     <li class="dropdown-item">EE</li>
@@ -48,7 +48,7 @@
                  <img src="icons/icons8-search-90.png" alt="search" width="25px" height="25px">
             </li>
             <li class="menu-item">
-                <i class="fa-solid fa-circle-half-stroke"></i>
+                <i class="fa-solid fa-circle-half-stroke" id="dnl-mode"></i>
             </li>
         </ul>
         <div class="msbte-logo"></div>
@@ -77,11 +77,12 @@
             </div>
         </div>
         <!-- Department section -->
+    <main>
         <div class="select-title">
             <span>Select Department</span>
         </div>
         <div class="department-box">
-            <div class="cm branch">
+            <div class="cm branch" id="cm">
                 <i class="fa-solid fa-computer"></i>
                 <span>Computer Technolgy</span>
                 <p>Download Computer Technolgy Study Material</p>
@@ -145,6 +146,7 @@
                 </p>
             </div>
         </div>
+    </main>
         <!-- social media links -->
         <div class="media-links">
             <div class="links-title"><span>Links</span></div>
@@ -200,5 +202,6 @@
             <button onclick="scrollToTop()" id="btn-back-to-top" title="Go to top">Page Up</button>
         </div>        
     </footer>
+    <script src="script.js"></script>
 </body>
 </html>
