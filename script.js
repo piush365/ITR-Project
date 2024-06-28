@@ -17,7 +17,7 @@ const dnl = document.querySelector("#dnl-mode");
 const secBody = document.querySelector(".sec-body");
 const topHead = document.querySelector(".site-name-logo");
 const topHeadLogo = document.querySelector("#logo");
-
+const links = document.querySelectorAll("#links");
 
 // Function to set dark mode
 const setDarkMode = () => {
@@ -26,6 +26,9 @@ const setDarkMode = () => {
   topHead.style.backgroundColor = "#121212";
   topHead.style.color = "#f0f0f0";
   topHeadLogo.src = "images/D (3).png";
+  links.forEach(link => {
+    link.style.color = "#F5BD02";
+  });
 };
 
 // Function to set light mode
@@ -35,6 +38,9 @@ const setLightMode = () => {
   topHead.style.backgroundColor = "#f0f0f0";
   topHead.style.color = "#0f0f0f";
   topHeadLogo.src = "images/dd-logo.svg";
+  links.forEach(link => {
+    link.style.color = "#000080";
+  });
 };
 
 // Check if dark mode is enabled from local storage
@@ -62,5 +68,36 @@ dnl.addEventListener("click", () => {
   count++;
 });
 
+function togglePlaylist(subject, tableIndex) {
+  var table = document.querySelectorAll('.sem1 table')[tableIndex];
+  var playlist = table.querySelector('#' + subject + 'Playlist');
+  var iframe = playlist.querySelector('iframe');
+  var videos = playlist.querySelectorAll('video');
+  var audios = playlist.querySelectorAll('audio');
 
+  // Pause all videos
+  videos.forEach(video => {
+      if (!video.paused) {
+          video.pause();
+      }
+  });
+
+  // Pause all audios
+  audios.forEach(audio => {
+      if (!audio.paused) {
+          audio.pause();
+      }
+  });
+
+  // Toggle playlist display
+  if (playlist.style.display === 'none' || playlist.style.display === '') {
+      playlist.style.display = 'block';
+      // Optionally, you can load the iframe source when showing the playlist
+      iframe.src = iframe.getAttribute('data-src');
+  } else {
+      playlist.style.display = 'none';
+      // Optionally, you can unload the iframe source when hiding the playlist
+      iframe.src = '';
+  }
+}
 
