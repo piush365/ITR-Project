@@ -543,23 +543,22 @@ footer {
   transform: translateY(2px);
 }
 
-/* syllabus table */
-.syllabus {
+/* resource table */
+.resource {
   display: flex;
   flex-direction: column;
-  width: 95%;
+  width: 100%;
   align-items: center;
   align-self: center;
   justify-content: space-between;
-  padding: 50px;
+  padding: 50px 0 50px 0;
 }
 
 .s {
   display: flex;
   flex-direction: column;
-  padding: 20px;
-  width: 75%;
-  height: 450px;
+  padding: 10px;
+  width: 100%;
   align-items: center;
   justify-content: space-between;
   background-color: #000080;
@@ -574,13 +573,14 @@ footer {
   text-align: center;
   padding: 8px;
   border-bottom: #F5BD02 1px solid;
-  margin-bottom: 5px;
+  margin-bottom: 20px;
 }
 
 table {
   width: 100%;
   height: 300px;
   border-collapse: collapse;
+  margin-bottom: 20px;
 }
 thead th {
   font-size: 1.2em;
@@ -622,3 +622,7 @@ td button:active {
   transform: translateY(2px);
 }
 
+.playlist-container {
+    display: none; /* Hide playlist by default */
+    margin-top: 10px;
+}
