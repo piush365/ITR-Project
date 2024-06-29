@@ -8,7 +8,7 @@ const cmElements = document.querySelectorAll("#cm");
 
 cmElements.forEach(cmElement => {
   cmElement.addEventListener("click", () => {
-    window.location.href = "cm-dept.html";
+    window.location.href = "../cm/cm-dept.html";
   });
 });
 
@@ -21,11 +21,12 @@ const links = document.querySelectorAll("#links");
 
 // Function to set dark mode
 const setDarkMode = () => {
+  console.log("d");
   secBody.style.backgroundColor = "#121212";
   secBody.style.color = "#f0f0f0";
   topHead.style.backgroundColor = "#121212";
   topHead.style.color = "#f0f0f0";
-  topHeadLogo.src = "images/D (3).png";
+  topHeadLogo.src = "../images/D (3).png";
   links.forEach(link => {
     link.style.color = "#F5BD02";
   });
@@ -33,11 +34,12 @@ const setDarkMode = () => {
 
 // Function to set light mode
 const setLightMode = () => {
+  console.log("l");
   secBody.style.backgroundColor = "#f0f0f0";
   secBody.style.color = "#0f0f0f";
   topHead.style.backgroundColor = "#f0f0f0";
   topHead.style.color = "#0f0f0f";
-  topHeadLogo.src = "images/dd-logo.svg";
+  topHeadLogo.src = "../images/dd-logo.svg";
   links.forEach(link => {
     link.style.color = "#000080";
   });
@@ -56,48 +58,18 @@ if (count % 2 === 0) {
   setDarkMode();
 }
 
-// Event listener for button click
-dnl.addEventListener("click", () => {
+// Add event listener for the dark mode toggle button
+dnl.addEventListener('click', () => {
+  count++;
   if (count % 2 === 0) {
-    setDarkMode();
-    localStorage.setItem('darkModeEnabled', 'true');
-  } else {
     setLightMode();
     localStorage.setItem('darkModeEnabled', 'false');
+  } else {
+    setDarkMode();
+    localStorage.setItem('darkModeEnabled', 'true');
   }
-  count++;
 });
 
-function togglePlaylist(subject, tableIndex) {
-  var table = document.querySelectorAll('.sem1 table')[tableIndex];
-  var playlist = table.querySelector('#' + subject + 'Playlist');
-  var iframe = playlist.querySelector('iframe');
-  var videos = playlist.querySelectorAll('video');
-  var audios = playlist.querySelectorAll('audio');
 
-  // Pause all videos
-  videos.forEach(video => {
-      if (!video.paused) {
-          video.pause();
-      }
-  });
 
-  // Pause all audios
-  audios.forEach(audio => {
-      if (!audio.paused) {
-          audio.pause();
-      }
-  });
-
-  // Toggle playlist display
-  if (playlist.style.display === 'none' || playlist.style.display === '') {
-      playlist.style.display = 'block';
-      // Optionally, you can load the iframe source when showing the playlist
-      iframe.src = iframe.getAttribute('data-src');
-  } else {
-      playlist.style.display = 'none';
-      // Optionally, you can unload the iframe source when hiding the playlist
-      iframe.src = '';
-  }
-}
 
