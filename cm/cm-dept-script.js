@@ -96,15 +96,36 @@ dnl.addEventListener('click', () => {
 });
 
 
+// function togglePlaylist(id) {
+//   var playlist = document.getElementById(id);
+//   if (playlist.style.display === "none") {
+//     playlist.style.display = "block";
+//     var iframe = playlist.querySelector('iframe');
+//     if (iframe && !iframe.src) {
+//       iframe.src = iframe.getAttribute('data-src');
+//     }
+//   } else {
+//     playlist.style.display = "none";
+//     // Optional: Stop the video when hiding the playlist
+//     var iframe = playlist.querySelector('iframe');
+//     if (iframe) {
+//       iframe.src = '';
+//     }
+//   }
+// }
+
+
+
 function togglePlaylist(id) {
-  var playlist = document.getElementById(id);
-  if (playlist.style.display === "none") {
-      playlist.style.display = "block";
-      var iframe = playlist.querySelector('iframe');
-      if (iframe && !iframe.src) {
-          iframe.src = iframe.getAttribute('data-src');
-      }
+  var thumbnail = document.getElementById(id + 'Thumbnail');
+  if (thumbnail.style.display === 'none' || thumbnail.style.display === '') {
+      thumbnail.style.display = 'block';
   } else {
-      playlist.style.display = "none";
+      thumbnail.style.display = 'none';
   }
 }
+
+  
+
+
+
