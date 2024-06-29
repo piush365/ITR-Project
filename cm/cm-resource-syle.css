@@ -622,7 +622,7 @@ td button:active {
   transform: translateY(2px);
 }
 
-.playlist-container {
-    display: none; /* Hide playlist by default */
-    margin-top: 10px;
+.playlist-thumbnail {
+  display: none; /* Hide initially */
+  margin-top: 10px;
 }
