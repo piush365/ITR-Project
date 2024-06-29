@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Diploma Dost</title>
     <!-- css -->
-    <link rel="stylesheet" href="cmStyle.css">
+    <link rel="stylesheet" href="style.css">
     <!-- font-awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <!-- googlefont -->
@@ -16,7 +16,7 @@
 <body>
     <!-- title -->
     <div class="site-name-logo">
-        <img src="images/dd-logo.svg" alt="Site Logo" class="site-logo" id="logo">
+        <img src="../images/dd-logo.svg" alt="Site Logo" class="site-logo" id="logo">
         <span class="site-name">Diploma Dost</span>
     </div>
     <!-- navbar -->
@@ -42,11 +42,6 @@
                     <li class="dropdown-item">Contact</li>
                     <li class="dropdown-item">Our College</li>
                 </ul>
-            </li>
-            <li class="menu-item search-container">
-                <input type="text" class="search-input" placeholder="Enter Subject Code">
-                <!-- <i class="fa-solid fa-magnifying-glass"></i> -->
-                 <img src="icons/icons8-search-90.png" alt="search" width="25px" height="25px">
             </li>
             <li class="menu-item" id="dnl-mode">
                 <i class="fa-solid fa-circle-half-stroke" ></i>
@@ -80,33 +75,72 @@
         <!-- Department section -->
     <main>
         <div class="select-title">
-            <span>Select Resource</span>
+            <span>Select Department</span>
         </div>
-        <div class="resource">
-                <div class="syllabus r" id="sy">
-                    <i class="fa-solid fa-folder"></i>
-                    <span>Syllabus</span>
-                </div>
-                <div class="pyq r" id="pyq">
-                    <i class="fa-regular fa-file"></i>
-                    <span>Previous Years Question Papers</span>
-                </div>
-                <div class="model r" id="md">
-                    <i class="fa-solid fa-lightbulb"></i>
-                    <span>Model Answer Paper</span>
-                </div>
-                <div class="notes r" id="notes">
-                    <i class="fa-regular fa-note-sticky"></i>
-                    <span>Notes & E-Book</span>
-                </div>
-                <div class="manual r" id="manual">
-                    <i class="fa-solid fa-flask"></i>
-                    <span>Lab Manuals</span>
-                </div>
-                <div class="video r" id="video">
-                    <i class="fa-brands fa-youtube"></i>
-                    <span>Video Lectures</span>
-                </div>
+        <div class="department-box">
+            <div class="cm branch" id="cm">
+                <i class="fa-solid fa-computer"></i>
+                <span>Computer Technolgy</span>
+                <p>Download Computer Technolgy Study Material</p>
+            </div>
+            <div class="it branch">
+                <i class="fa-solid fa-microchip"></i>
+                <span>Information Technolgy</span>
+                <p>Download Information Technolgy Study Material</p>
+            </div>
+            <div class="entc branch">
+                <i class="fa-solid fa-tower-cell"></i>
+                <span>Electronic and Telecommunication</span>
+                <p>Download Electronic and Telecommunication Study Material</p>
+            </div>
+            <div class="ee branch">
+                <i class="fa-solid fa-bolt"></i>
+                <span>Electrical Engineering</span>
+                <p>Download Electrical Engineering Study Material</p>
+            </div>
+            <div class="ce branch">
+                <i class="fa-solid fa-helmet-safety"></i>
+                <span>Civil Engineering</span>
+                <p>Download Civil Engineering Study Material</p>
+            </div>
+            <div class="me branch">
+                <i class="fa-solid fa-wrench"></i>
+                <span>Mechanical Engineering</span>
+                <p>Download Mechanical Engineering Study Material</p>
+            </div>
+        </div>
+        <!-- material-info section -->
+        <div class="material-info">
+            <div class="pyq material">
+                <span>Msbte Question paper</span>
+                <p>We gather previous years' question papers from various reliable sources and provide them to you, ensuring you have access to a comprehensive repository for effective exam preparation. These papers are essential tools for understanding exam patterns, marking schemes, and frequently asked questions, helping you practice and perform better in your exams.
+                </p>
+            </div>
+            <div class="model material">
+                <span>Msbte Model Answer Paper</span>
+                <p>Our collection of model answer papers is curated from trusted websites to help you understand the ideal responses to exam questions, aiding in your study and revision process. These papers offer detailed, step-by-step solutions and explanations, allowing you to learn the best approaches to answering different types of questions and improving your writing skills.
+                </p>
+            </div>
+            <div class="syllabus material">
+                <span>Msbte Syllabus</span>
+                <p>We provide comprehensive and up-to-date syllabi from various educational boards and universities. These syllabi outline the topics and objectives for each course, helping you stay organized and focused on what needs to be studied. With detailed breakdowns of each subject, you can plan your studies more effectively and ensure you cover all necessary material.
+                </p>
+            </div>
+            <div class="manual material">
+                <span>Msbte Lab Manuals</span>
+                <p>Find detailed and well-structured lab manuals sourced from multiple educational platforms. These manuals will guide you through experiments and practicals with step-by-step instructions. Each manual includes clear illustrations, safety guidelines, and detailed procedures to ensure you can conduct experiments accurately and confidently.
+                </p>
+            </div>
+            <div class="notes material">
+                <span>Notes &amp; E&hyphen;Book</span>
+                <p>We offer a wide range of eBooks and meticulously compiled notes, sourced from various academic and professional websites, covering different subjects and topics to enhance your learning experience. These resources are designed to simplify complex concepts and provide you with clear, concise information for efficient studying.
+                </p>
+            </div>
+            <div class="video material">
+                <span>Video Lectures</span>
+                <p>Our platform provides a vast selection of video lectures collected from renowned educational websites. These lectures cover a variety of topics and are designed to offer visual and auditory learning experiences. Featuring expert instructors and high-quality production, these videos make complex topics more accessible and engaging, helping you to better understand and retain information.
+                </p>
+            </div>
         </div>
     </main>
         <!-- social media links -->
@@ -164,7 +198,6 @@
             <button onclick="scrollToTop()" id="btn-back-to-top" title="Go to top">Page Up</button>
         </div>        
     </footer>
-    <script src="cm-dept-script.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
-

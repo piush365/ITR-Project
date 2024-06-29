@@ -16,7 +16,7 @@
 <body>
     <!-- title -->
     <div class="site-name-logo">
-        <img src="images/dd-logo.svg" alt="Site Logo" class="site-logo" id="logo">
+        <img src="../images/dd-logo.svg" alt="Site Logo" class="site-logo" id="logo">
         <span class="site-name">Diploma Dost</span>
     </div>
     <!-- navbar -->
@@ -36,17 +36,23 @@
                 </ul>
             </li>
             <li class="menu-item">
+              Resource
+              <ul class="dropdown">
+                  <li class="dropdown-item" id="sy">Syllabus</li>
+                  <li class="dropdown-item" id="pyq">PYQ's</li>
+                  <li class="dropdown-item" id="md">Model Papers</li>
+                  <li class="dropdown-item" id="manual">Lab Manual</li>
+                  <li class="dropdown-item" id="notes">Notes & E-Book</li>
+                  <li class="dropdown-item" id="video">Video Playlist</li>
+              </ul>
+          </li>
+            <li class="menu-item">
                 More
                 <ul class="dropdown">
                     <li class="dropdown-item">About Us</li>
                     <li class="dropdown-item">Contact</li>
                     <li class="dropdown-item">Our College</li>
                 </ul>
-            </li>
-            <li class="menu-item search-container">
-                <input type="text" class="search-input" placeholder="Enter Subject Code">
-                <!-- <i class="fa-solid fa-magnifying-glass"></i> -->
-                 <img src="icons/icons8-search-90.png" alt="search" width="25px" height="25px">
             </li>
             <li class="menu-item" id="dnl-mode">
                 <i class="fa-solid fa-circle-half-stroke" ></i>
@@ -80,77 +86,47 @@
         <!-- Department section -->
     <main>
       <div class="select-title">
-        <span>Computer Technolgy Previous Years Question Papers</span>
+        <span>Computer Technolgy Syllabus</span>
       </div>
       <div class="resource">
-        <div class="sem1 s">
-            <span>Semester I</span>
-            <table>
-                <thead>
-                    <tr>
-                        <th scope="col">Subjects</th>
-                        <th scope="col">Playlist</th>
-                    </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <th scope="row">Fundamentals of ICT - 22001</th>
-                    <td>
-                        <button onclick="togglePlaylist('sub1')">Toggle Playlist</button>
-                        <div id="sub1Playlist" class="playlist-container" style="display: none;">
-                            <iframe width="560" height="315" src="" data-src="https://www.youtube.com/embed/videoseries?list=PLfqMhTWNBTe0PY9xunOzsP5kmYIz2Hu7i&pp=iAQB" frameborder="0" allowfullscreen></iframe>
-                        </div>
-                    </td>
-                </tr>
-                    <tr>
-                        <th scope="row">Engineering Graphics - 22002</th>
-                        <td>
-                            <button onclick="togglePlaylist('sub2')">Toggle Playlist</button>
-                            <div id="sub2Playlist" class="playlist-container">
-                                <iframe width="520" height="315" src="https://www.youtube.com/embed/videoseries?list=YOUR_PLAYLIST_ID_2" frameborder="0" allowfullscreen></iframe>
-                            </div>
-                        </td>
-                    </tr>
-                    <tr>
-                        <th scope="row">Workshop Practice - 22004</th>
-                        <td>
-                            <button onclick="togglePlaylist('sub3')">Toggle Playlist</button>
-                            <div id="sub3Playlist" class="playlist-container">
-                                <iframe width="520" height="315" src="https://www.youtube.com/embed/videoseries?list=YOUR_PLAYLIST_ID_3" frameborder="0" allowfullscreen></iframe>
-                            </div>
-                        </td>
-                    </tr>
-                    <tr>
-                        <th scope="row">English - 22101</th>
-                        <td>
-                            <button onclick="togglePlaylist('sub4')">Toggle Playlist</button>
-                            <div id="sub4Playlist" class="playlist-container">
-                                <iframe width="520" height="315" src="https://www.youtube.com/embed/videoseries?list=YOUR_PLAYLIST_ID_4" frameborder="0" allowfullscreen></iframe>
-                            </div>
-                        </td>
-                    </tr>
-                    <tr>
-                        <th scope="row">Basic Science (Phy & Chem) - 22102</th>
-                        <td>
-                            <button onclick="togglePlaylist('sub5')">Toggle Playlist</button>
-                            <div id="sub5Playlist" class="playlist-container">
-                                <iframe width="520" height="315" src="https://www.youtube.com/embed/videoseries?list=YOUR_PLAYLIST_ID_5" frameborder="0" allowfullscreen></iframe>
-                            </div>
-                        </td>
-                    </tr>
-                    <tr>
-                        <th scope="row">Basic Mathematics - 22103</th>
-                        <td>
-                            <button onclick="togglePlaylist('sub6')">Toggle Playlist</button>
-                            <div id="sub6Playlist" class="playlist-container">
-                                <iframe width="520" height="315" src="https://www.youtube.com/embed/videoseries?list=YOUR_PLAYLIST_ID_6" frameborder="0" allowfullscreen></iframe>
-                            </div>
-                        </td>
-                    </tr>
-                </tbody>
-            </table>
-            <caption>Computer Technology Semester I All Subjects Playlist</caption>
-        </div>
+      <div class="sem1 s">
+        <span>Semester I</span>
+        <table>
+          <thead>
+            <tr>
+              <th scope="col">Subjects</th>
+              <th scope="col">Download</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row">Fundamentals of ICT - 22001</th>
+              <td><button id="sub1-syllabus">Download</button></td>
+            </tr>
+            <tr>
+              <th scope="row">Engineering Graphics - 22002</th>
+              <td><button id="sub2-syllabus">Download</button></td>
+            </tr>
+            <tr>
+              <th scope="row">Workshop Practice - 22004</th>
+              <td><button id="sub3-syllabus">Download</button></td>
+            </tr>
+            <tr>
+              <th scope="row">English - 22101</th>
+              <td><button id="sub4-syllabus">Download</button></td>
+            </tr>
+            <tr>
+              <th scope="row">Basic Science (Phy & Chem) - 22102</th>
+              <td><button id="sub5-syllabus">Download</button></td>
+            </tr>
+            <tr>
+              <th scope="row">Basic Mathematics - 22103</th>
+              <td><button id="sub6-syllabus">Download</button></td>
+            </tr>
+          </tbody>
+        </table>
+        <caption>Computer Technolgy Semester I All Subjects Syllabus Download</caption>
+      </div>
       <div class="sem1 s">
         <span>Semester II</span>
         <table>
@@ -187,7 +163,7 @@
             </tr>
           </tbody>
         </table>
-        <caption>Computer Technolgy Semester II All Subjects PYQ Download</caption>
+        <caption>Computer Technolgy Semester II All Subjects Syllabus Download</caption>
       </div>
       <div class="sem1 s">
         <span>Semester III</span>
@@ -221,7 +197,7 @@
             </tr>
           </tbody>
         </table>
-        <caption>Computer Technolgy Semester III All Subjects PYQ Download</caption>
+        <caption>Computer Technolgy Semester III All Subjects Syllabus Download</caption>
       </div>
       <div class="sem1 s">
         <span>Semester IV</span>
@@ -289,7 +265,7 @@
             </tr>
           </tbody>
         </table>
-        <caption>Computer Technolgy Semester V All Subjects PYQ Download</caption>
+        <caption>Computer Technolgy Semester V All Subjects Syllabus Download</caption>
       </div>
       <div class="sem1 s">
         <span>Semester VI</span>
@@ -327,7 +303,7 @@
             </tr>
           </tbody>
         </table>
-        <caption>Computer Technolgy Semester VI All Subjects PYQ Download</caption>
+        <caption>Computer Technolgy Semester VI All Subjects Syllabus Download</caption>
       </div>      
       </div>    </main>
         <!-- social media links -->
@@ -385,7 +361,6 @@
             <button onclick="scrollToTop()" id="btn-back-to-top" title="Go to top">Page Up</button>
         </div>        
     </footer>
-    <script src="script.js"></script>
+    <script src="cm-dept-script.js"></script>
 </body>
 </html>
-
