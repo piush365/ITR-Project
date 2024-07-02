@@ -554,6 +554,11 @@ footer {
   padding: 50px 0 50px 0;
 }
 
+.resource a {
+  text-decoration: none;
+  color: #0f0f0f;
+}
+
 .s {
   display: flex;
   flex-direction: column;
