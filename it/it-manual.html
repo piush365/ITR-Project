@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Diploma Dost</title>
     <!-- css -->
-    <link rel="stylesheet" href="it-syllabus-style.css">
+    <link rel="stylesheet" href="it-resource-syle.css">
     <!-- font-awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <!-- googlefont -->
@@ -16,7 +16,7 @@
 <body>
     <!-- title -->
     <div class="site-name-logo">
-        <img src="images/dd-logo.svg" alt="Site Logo" class="site-logo" id="logo">
+        <img src="../images/dd-logo.svg" alt="Site Logo" class="site-logo" id="logo">
         <span class="site-name">Diploma Dost</span>
     </div>
     <!-- navbar -->
@@ -27,25 +27,32 @@
             <li class="menu-item">
                 Branch
                 <ul class="dropdown">
-                    <li class="dropdown-item" id="cm">CM</li>
-                    <li class="dropdown-item">IT</li>
-                    <li class="dropdown-item">ENTC</li>
-                    <li class="dropdown-item">EE</li>
-                    <li class="dropdown-item">ME</li>
+                  <li class="dropdown-item" id="cm">CM</li>
+                  <li class="dropdown-item" id="it">IT</li>
+                  <li class="dropdown-item" id="entc">ENTC</li>
+                  <li class="dropdown-item" id="ee">EE</li>
+                  <li class="dropdown-item" id="me">ME</li>
+                  <li class="dropdown-item" id="ce">CE</li>
                 </ul>
             </li>
             <li class="menu-item">
+              Resource
+              <ul class="dropdown">
+                  <li class="dropdown-item" id="sy">Syllabus</li>
+                  <li class="dropdown-item" id="pyq">PYQ's</li>
+                  <li class="dropdown-item" id="md">Model Papers</li>
+                  <li class="dropdown-item" id="manual">Lab Manual</li>
+                  <li class="dropdown-item" id="notes">Notes & E-Book</li>
+                  <li class="dropdown-item" id="video">Video Playlist</li>
+              </ul>
+          </li>
+            <li class="menu-item">
                 More
                 <ul class="dropdown">
-                    <li class="dropdown-item">About Us</li>
+                    <li class="dropdown-item" id="abt">About Us</li>
                     <li class="dropdown-item">Contact</li>
                     <li class="dropdown-item">Our College</li>
                 </ul>
-            </li>
-            <li class="menu-item search-container">
-                <input type="text" class="search-input" placeholder="Enter Subject Code">
-                <!-- <i class="fa-solid fa-magnifying-glass"></i> -->
-                 <img src="icons/icons8-search-90.png" alt="search" width="25px" height="25px">
             </li>
             <li class="menu-item "id="dnl-mode">
                 <i class="fa-solid fa-circle-half-stroke" ></i>
@@ -362,11 +369,11 @@
                 </div>
         </div>    
         <div class="f-content">
-            <a href="http://">About Us</a>
+            <a href="../home/about.html">About Us</a>
             <a href="http://">Contact Us</a>
             <button onclick="scrollToTop()" id="btn-back-to-top" title="Go to top">Page Up</button>
         </div>        
     </footer>
-    <script src="script.js"></script>
+    <script src="it-dept-script.js"></script>
 </body>
 </html>
