@@ -12,6 +12,22 @@ cmElements.forEach(cmElement => {
   });
 });
 
+const ceElements = document.querySelectorAll("#ce");
+
+ceElements.forEach(ceElement => {
+  ceElement.addEventListener("click", () => {
+    window.location.href = "../ce/ce-dept.html";
+  });
+});
+
+const itElements = document.querySelectorAll("#it");
+
+itElements.forEach(itElement => {
+  itElement.addEventListener("click", () => {
+    window.location.href = "../it/it-dept.html";
+  });
+});
+
 const logo2 = document.getElementById("msbte");
 logo2.addEventListener("click", () => {
   window.open("https://msbte.org.in", "blank_");

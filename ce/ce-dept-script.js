@@ -1,27 +1,37 @@
 const sy = document.querySelector("#sy");
 
 sy.addEventListener("click", () => {
-  window.location.href = "cm-syllabus.html";
+  window.location.href = "ce-syllabus.html";
 });
+
+const pyq = document.querySelector("#pyq");
 
 pyq.addEventListener("click", () => {
-  window.location.href = "cm-pyq.html";
+  window.location.href = "ce-pyq.html";
 });
+
+const video = document.querySelector("#video");
 
 video.addEventListener("click", () => {
-  window.location.href = "cm-video.html";
+  window.location.href = "ce-video.html";
 });
+
+const md = document.querySelector("#md");
 
 md.addEventListener("click", () => {
-  window.location.href = "cm-model.html";
+  window.location.href = "ce-model.html";
 });
+
+const notes = document.querySelector("#notes");
 
 notes.addEventListener("click", () => {
-  window.location.href = "cm-notes.html";
+  window.location.href = "ce-notes.html";
 });
 
+const manual = document.querySelector("#manual");
+
 manual.addEventListener("click", () => {
-  window.location.href = "cm-manual.html";
+  window.location.href = "ce-manual.html";
 });
 
 const home = document.querySelector("#home");
@@ -30,19 +40,19 @@ home.addEventListener("click", () => {
   window.location.href = "../home/index.html";
 });
 
-const cmElements = document.querySelectorAll("#cm");
-
-cmElements.forEach(cmElement => {
-  cmElement.addEventListener("click", () => {
-    window.location.href = "cm-dept.html";
-  });
-});
-
 const ceElements = document.querySelectorAll("#ce");
 
 ceElements.forEach(ceElement => {
   ceElement.addEventListener("click", () => {
-    window.location.href = "../ce/ce-dept.html";
+    window.location.href = "ce-dept.html";
+  });
+});
+
+const cmElements = document.querySelectorAll("#cm");
+
+cmElements.forEach(cmElement => {
+  cmElement.addEventListener("click", () => {
+    window.location.href = "../cm/cm-dept.html";
   });
 });
 
@@ -142,6 +152,7 @@ function togglePlaylist(id) {
 }
 
   
+
 const abt = document.querySelectorAll("#abt");
 
 abt.forEach(a => {
@@ -149,6 +160,5 @@ abt.forEach(a => {
     window.location.href = "../home/about.html";
   });
 });
-
 
 
