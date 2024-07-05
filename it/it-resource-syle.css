@@ -563,7 +563,7 @@ footer {
   display: flex;
   flex-direction: column;
   padding: 10px;
-  width: 100%;
+  width: 1000px;
   align-items: center;
   justify-content: space-between;
   background-color: #000080;
