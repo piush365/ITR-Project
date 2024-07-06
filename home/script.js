@@ -28,6 +28,14 @@ itElements.forEach(itElement => {
   });
 });
 
+const eeElements = document.querySelectorAll("#ee");
+
+eeElements.forEach(eeElement => {
+  eeElement.addEventListener("click", () => {
+    window.location.href = "../ee/ee-dept.html";
+  });
+});
+
 const logo2 = document.getElementById("msbte");
 logo2.addEventListener("click", () => {
   window.open("https://msbte.org.in", "blank_");

@@ -54,6 +54,14 @@ itElements.forEach(itElement => {
   });
 });
 
+const eeElements = document.querySelectorAll("#ee");
+
+eeElements.forEach(eeElement => {
+  eeElement.addEventListener("click", () => {
+    window.location.href = "../ee/ee-dept.html";
+  });
+});
+
 const dnl = document.querySelector("#dnl-mode");
 const secBody = document.querySelector(".sec-body");
 const topHead = document.querySelector(".site-name-logo");
