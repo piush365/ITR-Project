@@ -169,3 +169,9 @@ abt.forEach(a => {
 });
 
 
+document.getElementById("btn-back-to-top").addEventListener("click", () => {
+  window.scroll({
+    top : 0,
+    behavior : "smooth"
+  });
+});
