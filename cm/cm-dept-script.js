@@ -54,14 +54,6 @@ itElements.forEach(itElement => {
   });
 });
 
-const eeElements = document.querySelectorAll("#ee");
-
-eeElements.forEach(eeElement => {
-  eeElement.addEventListener("click", () => {
-    window.location.href = "../ee/ee-dept.html";
-  });
-});
-
 const dnl = document.querySelector("#dnl-mode");
 const secBody = document.querySelector(".sec-body");
 const topHead = document.querySelector(".site-name-logo");
@@ -160,3 +152,9 @@ abt.forEach(a => {
 
 
 
+document.getElementById("btn-back-to-top").addEventListener("click", () => {
+  window.scroll({
+    top : 0,
+    behavior : "smooth"
+  });
+});
