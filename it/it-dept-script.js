@@ -64,6 +64,14 @@ itElements.forEach(itElement => {
   });
 });
 
+const eeElements = document.querySelectorAll("#ee");
+
+eeElements.forEach(eeElement => {
+  eeElement.addEventListener("click", () => {
+    window.location.href = "../ee/ee-dept.html";
+  });
+});
+
 const dnl = document.querySelector("#dnl-mode");
 const secBody = document.querySelector(".sec-body");
 const topHead = document.querySelector(".site-name-logo");
@@ -144,10 +152,19 @@ dnl.addEventListener('click', () => {
 
 function togglePlaylist(id) {
   var thumbnail = document.getElementById(id + 'Thumbnail');
+  var iframe = thumbnail.querySelector('iframe');
+
+  // Toggle visibility
   if (thumbnail.style.display === 'none' || thumbnail.style.display === '') {
       thumbnail.style.display = 'block';
   } else {
       thumbnail.style.display = 'none';
+  }
+
+  // Pause video if iframe exists
+  if (iframe) {
+      var iframeSrc = iframe.src;
+      iframe.src = iframeSrc; // This reloads the iframe, effectively stopping the video
   }
 }
 
@@ -162,3 +179,9 @@ abt.forEach(a => {
 });
 
 
+document.getElementById("btn-back-to-top").addEventListener("click", () => {
+  window.scroll({
+    top : 0,
+    behavior : "smooth"
+  });
+});
