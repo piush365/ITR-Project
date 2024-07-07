@@ -64,6 +64,7 @@ const logof = document.getElementById("logof");
 const links = document.querySelectorAll("#links");
 const commentSection = document.querySelector(".comment-section")
 const k = document.querySelectorAll("#k");
+const kbtn = document.getElementById("kclick");
 
 
 
@@ -80,6 +81,7 @@ const setDarkMode = () => {
   commentSection.style.color = "#f0f0f0";
   terBody.style.backgroundColor = "#121212";
   terBody.style.color = "#f0f0f0";
+  kbtn.style.color = "#f0f0f0";
   topHead.style.backgroundColor = "#121212";
   topHead.style.color = "#f0f0f0";
   topHeadLogo.forEach(logo => {
@@ -99,6 +101,7 @@ const setLightMode = () => {
   commentSection.style.color = "#0f0f0f";
   terBody.style.backgroundColor = "#f0f0f0";
   terBody.style.color = "#0f0f0f";
+  kbtn.style.color = "#0f0f0f";
   topHead.style.backgroundColor = "#f0f0f0";
   topHead.style.color = "#0f0f0f";
   topHeadLogo.forEach(logo => {
@@ -166,6 +169,13 @@ document.addEventListener('DOMContentLoaded', function() {
 document.getElementById("btn-back-to-top").addEventListener("click", () => {
   window.scroll({
     top : 0,
+    behavior : "smooth"
+  });
+});
+
+document.getElementById("kclick").addEventListener("click", () => {
+  window.scroll({
+    top : 700,
     behavior : "smooth"
   });
 });
