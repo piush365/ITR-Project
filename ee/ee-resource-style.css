@@ -164,6 +164,7 @@
   
   
   /* horizontal box 75:25 % pixel */
+  
   .sec-body {
     display: flex;
     flex-grow: 1;
