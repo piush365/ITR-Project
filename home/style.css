@@ -299,6 +299,10 @@ header {
   color: #F5BD02;
 }
 
+.cm-k-s1 a:hover, .cm-k-s2 a:hover{
+  text-decoration: underline;
+}
+
 /* latest news title */
 .latest-news {
   display: flex;
@@ -753,5 +757,18 @@ footer {
 }
 
 .f-content button:active {
+  transform: translateY(2px);
+}
+
+
+.kbtn {
+  margin-top: 5px;
+  background-color: transparent;
+  border: none;
+  text-decoration: underline;
+  font-size: 1.2em;
+}
+
+.kbtn:active {
   transform: translateY(2px);
 }
