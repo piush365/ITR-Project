@@ -78,6 +78,7 @@ const topHeadLogo = document.querySelector("#logo");
 const links = document.querySelectorAll("#links");
 
 // Function to set dark mode
+
 const setDarkMode = () => {
   console.log("d");
   secBody.style.backgroundColor = "#121212";
