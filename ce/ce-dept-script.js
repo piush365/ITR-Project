@@ -182,7 +182,7 @@ const abt = document.querySelectorAll("#abt");
 
 abt.forEach(a => {
   a.addEventListener("click", () => {
-    window.location.href = "../home/about.html";
+    window.location.href = "../other/about.html";
   });
 });
 

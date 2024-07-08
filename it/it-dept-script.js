@@ -44,7 +44,7 @@ const ceElements = document.querySelectorAll("#ce");
 
 ceElements.forEach(ceElement => {
   ceElement.addEventListener("click", () => {
-    window.location.href = "ce-dept.html";
+    window.location.href = "../ce/ce-dept.html";
   });
 });
 
@@ -60,7 +60,7 @@ const itElements = document.querySelectorAll("#it");
 
 itElements.forEach(itElement => {
   itElement.addEventListener("click", () => {
-    window.location.href = "../it/it-dept.html";
+    window.location.href = "it-dept.html";
   });
 });
 
@@ -79,6 +79,7 @@ const topHeadLogo = document.querySelector("#logo");
 const links = document.querySelectorAll("#links");
 
 // Function to set dark mode
+
 const setDarkMode = () => {
   console.log("d");
   secBody.style.backgroundColor = "#121212";
@@ -174,7 +175,7 @@ const abt = document.querySelectorAll("#abt");
 
 abt.forEach(a => {
   a.addEventListener("click", () => {
-    window.location.href = "../home/about.html";
+    window.location.href = "../other/about.html";
   });
 });
 

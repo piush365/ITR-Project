@@ -1,29 +1,3 @@
-const sy = document.querySelector("#sy");
-
-sy.addEventListener("click", () => {
-  window.location.href = "cm-syllabus.html";
-});
-
-pyq.addEventListener("click", () => {
-  window.location.href = "cm-pyq.html";
-});
-
-video.addEventListener("click", () => {
-  window.location.href = "cm-video.html";
-});
-
-md.addEventListener("click", () => {
-  window.location.href = "cm-model.html";
-});
-
-notes.addEventListener("click", () => {
-  window.location.href = "cm-notes.html";
-});
-
-manual.addEventListener("click", () => {
-  window.location.href = "cm-manual.html";
-});
-
 const home = document.querySelector("#home");
 
 home.addEventListener("click", () => {
@@ -34,15 +8,7 @@ const cmElements = document.querySelectorAll("#cm");
 
 cmElements.forEach(cmElement => {
   cmElement.addEventListener("click", () => {
-    window.location.href = "cm-dept.html";
-  });
-});
-
-const eeElements = document.querySelectorAll("#ee");
-
-eeElements.forEach(eeElement => {
-  eeElement.addEventListener("click", () => {
-    window.location.href = "../ee/ee-dept.html";
+    window.location.href = "../cm/cm-dept.html";
   });
 });
 
@@ -62,20 +28,60 @@ itElements.forEach(itElement => {
   });
 });
 
+const eeElements = document.querySelectorAll("#ee");
+
+eeElements.forEach(eeElement => {
+  eeElement.addEventListener("click", () => {
+    window.location.href = "../ee/ee-dept.html";
+  });
+});
+
+const logo2 = document.getElementById("msbte");
+logo2.addEventListener("click", () => {
+  window.open("https://msbte.org.in", "blank_");
+});
+
+const logo3 = document.getElementById("gps");
+logo3.addEventListener("click", () => {
+  window.open("http://gpsolapur.ac.in", "blanl_");
+});
+
+const abt = document.querySelectorAll("#abt");
+
+abt.forEach(a => {
+  a.addEventListener("click", () => {
+    window.location.href = "about.html";
+  });
+});
+
+
 const dnl = document.querySelector("#dnl-mode");
 const secBody = document.querySelector(".sec-body");
 const topHead = document.querySelector(".site-name-logo");
-const topHeadLogo = document.querySelector("#logo");
+const topHeadLogo = document.querySelectorAll("#logo");
+const logof = document.getElementById("logof");
 const links = document.querySelectorAll("#links");
+const commentSection = document.querySelector(".comment-section")
+const k = document.querySelectorAll("#k");
+
+
+
+logof.addEventListener("click", () => {
+  window.location.href = "../home/index.html";
+})
 
 // Function to set dark mode
 const setDarkMode = () => {
   console.log("d");
   secBody.style.backgroundColor = "#121212";
   secBody.style.color = "#f0f0f0";
+  commentSection.style.backgroundColor = "#121212";
+  commentSection.style.color = "#f0f0f0";
   topHead.style.backgroundColor = "#121212";
   topHead.style.color = "#f0f0f0";
-  topHeadLogo.src = "../images/D (3).png";
+  topHeadLogo.forEach(logo => {
+    logo.src = "../images/D (3).png";
+  });
   links.forEach(link => {
     link.style.color = "#F5BD02";
   });
@@ -86,9 +92,13 @@ const setLightMode = () => {
   console.log("l");
   secBody.style.backgroundColor = "#f0f0f0";
   secBody.style.color = "#0f0f0f";
+  commentSection.style.backgroundColor = "#f0f0f0";
+  commentSection.style.color = "#0f0f0f";
   topHead.style.backgroundColor = "#f0f0f0";
   topHead.style.color = "#0f0f0f";
-  topHeadLogo.src = "../images/dd-logo.svg";
+  topHeadLogo.forEach(logo => {
+    logo.src = "../images/dd-logo.svg";
+  });
   links.forEach(link => {
     link.style.color = "#000080";
   });
@@ -120,53 +130,32 @@ dnl.addEventListener('click', () => {
 });
 
 
-// function togglePlaylist(id) {
-//   var playlist = document.getElementById(id);
-//   if (playlist.style.display === "none") {
-//     playlist.style.display = "block";
-//     var iframe = playlist.querySelector('iframe');
-//     if (iframe && !iframe.src) {
-//       iframe.src = iframe.getAttribute('data-src');
-//     }
-//   } else {
-//     playlist.style.display = "none";
-//     // Optional: Stop the video when hiding the playlist
-//     var iframe = playlist.querySelector('iframe');
-//     if (iframe) {
-//       iframe.src = '';
-//     }
-//   }
-// }
+document.addEventListener('DOMContentLoaded', function() {
+  const commentForm = document.getElementById('comment-form');
+  const commentInput = document.getElementById('comment-input');
+  const commentsContainer = document.getElementById('comments-container');
 
+  commentForm.addEventListener('submit', function(e) {
+      e.preventDefault();
+      const commentText = commentInput.value.trim();
 
-
-function togglePlaylist(id) {
-  var thumbnail = document.getElementById(id + 'Thumbnail');
-  var iframe = thumbnail.querySelector('iframe');
-
-  // Toggle visibility
-  if (thumbnail.style.display === 'none' || thumbnail.style.display === '') {
-      thumbnail.style.display = 'block';
-  } else {
-      thumbnail.style.display = 'none';
-  }
-
-  // Pause video if iframe exists
-  if (iframe) {
-      var iframeSrc = iframe.src;
-      iframe.src = iframeSrc; // This reloads the iframe, effectively stopping the video
-  }
-}
-
-  
-const abt = document.querySelectorAll("#abt");
-
-abt.forEach(a => {
-  a.addEventListener("click", () => {
-    window.location.href = "../other/about.html";
+      if (commentText !== "") {
+          addComment(commentText);
+          commentInput.value = '';
+      }
   });
-});
 
+  function addComment(text) {
+      const commentElement = document.createElement('div');
+      commentElement.className = 'comment';
+
+      const commentText = document.createElement('p');
+      commentText.textContent = text;
+
+      commentElement.appendChild(commentText);
+      commentsContainer.appendChild(commentElement);
+  }
+});
 
 
 document.getElementById("btn-back-to-top").addEventListener("click", () => {
@@ -175,3 +164,4 @@ document.getElementById("btn-back-to-top").addEventListener("click", () => {
     behavior : "smooth"
   });
 });
+
