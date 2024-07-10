@@ -1,3 +1,17 @@
+<?php
+// Start session to access session variables
+session_start();
+
+// Check if user is logged in
+if (!isset($_SESSION['loggedin']) || $_SESSION['loggedin'] !== true) {
+    // Redirect to login page if not logged in
+    header('Location: ../enter/login.html');
+    exit();
+}
+
+// If logged in, continue to display the protected content
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
