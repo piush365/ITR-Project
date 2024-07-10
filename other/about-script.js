@@ -55,13 +55,20 @@ abt.forEach(a => {
 });
 
 
+const clg = document.querySelector("#clg");
+
+clg.addEventListener("click", () => {
+  window.location.href = "ourcollage.html"
+})
+
+
+
 const dnl = document.querySelector("#dnl-mode");
 const secBody = document.querySelector(".sec-body");
 const topHead = document.querySelector(".site-name-logo");
 const topHeadLogo = document.querySelectorAll("#logo");
 const logof = document.getElementById("logof");
 const links = document.querySelectorAll("#links");
-const commentSection = document.querySelector(".comment-section")
 const k = document.querySelectorAll("#k");
 
 
@@ -75,8 +82,6 @@ const setDarkMode = () => {
   console.log("d");
   secBody.style.backgroundColor = "#121212";
   secBody.style.color = "#f0f0f0";
-  commentSection.style.backgroundColor = "#121212";
-  commentSection.style.color = "#f0f0f0";
   topHead.style.backgroundColor = "#121212";
   topHead.style.color = "#f0f0f0";
   topHeadLogo.forEach(logo => {
@@ -92,8 +97,6 @@ const setLightMode = () => {
   console.log("l");
   secBody.style.backgroundColor = "#f0f0f0";
   secBody.style.color = "#0f0f0f";
-  commentSection.style.backgroundColor = "#f0f0f0";
-  commentSection.style.color = "#0f0f0f";
   topHead.style.backgroundColor = "#f0f0f0";
   topHead.style.color = "#0f0f0f";
   topHeadLogo.forEach(logo => {

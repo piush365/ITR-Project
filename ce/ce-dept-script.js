@@ -177,6 +177,16 @@ function togglePlaylist(id) {
   }
 }
 
+const logo2 = document.getElementById("msbte");
+logo2.addEventListener("click", () => {
+  window.open("https://msbte.org.in", "blank_");
+});
+
+const logo3 = document.getElementById("gps");
+logo3.addEventListener("click", () => {
+  window.open("http://gpsolapur.ac.in", "blanl_");
+});
+
 
 const abt = document.querySelectorAll("#abt");
 
@@ -185,6 +195,11 @@ abt.forEach(a => {
     window.location.href = "../other/about.html";
   });
 });
+
+const clg = document.getElementById("clg").addEventListener("click", () => {
+  window.location.href = "../other/ourcollage.html";
+})
+
 
 
 document.getElementById("btn-back-to-top").addEventListener("click", () => {

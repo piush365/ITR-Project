@@ -179,10 +179,24 @@ abt.forEach(a => {
   });
 });
 
+const clg = document.getElementById("clg").addEventListener("click", () => {
+  window.location.href = "../other/ourcollage.html";
+})
+
 
 document.getElementById("btn-back-to-top").addEventListener("click", () => {
   window.scroll({
     top : 0,
     behavior : "smooth"
   });
+});
+
+const logo2 = document.getElementById("msbte");
+logo2.addEventListener("click", () => {
+  window.open("https://msbte.org.in", "blank_");
+});
+
+const logo3 = document.getElementById("gps");
+logo3.addEventListener("click", () => {
+  window.open("http://gpsolapur.ac.in", "blanl_");
 });

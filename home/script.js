@@ -55,6 +55,10 @@ abt.forEach(a => {
 });
 
 
+const clg = document.getElementById("clg").addEventListener("click", () => {
+  window.location.href = "../other/ourcollage.html";
+})
+
 const dnl = document.querySelector("#dnl-mode");
 const secBody = document.querySelector(".sec-body");
 const terBody = document.querySelector(".ter-body");
@@ -62,7 +66,6 @@ const topHead = document.querySelector(".site-name-logo");
 const topHeadLogo = document.querySelectorAll("#logo");
 const logof = document.getElementById("logof");
 const links = document.querySelectorAll("#links");
-const commentSection = document.querySelector(".comment-section")
 const k = document.querySelectorAll("#k");
 const kbtn = document.getElementById("kclick");
 
@@ -77,8 +80,6 @@ const setDarkMode = () => {
   console.log("d");
   secBody.style.backgroundColor = "#121212";
   secBody.style.color = "#f0f0f0";
-  commentSection.style.backgroundColor = "#121212";
-  commentSection.style.color = "#f0f0f0";
   terBody.style.backgroundColor = "#121212";
   terBody.style.color = "#f0f0f0";
   kbtn.style.color = "#f0f0f0";
@@ -97,8 +98,6 @@ const setLightMode = () => {
   console.log("l");
   secBody.style.backgroundColor = "#f0f0f0";
   secBody.style.color = "#0f0f0f";
-  commentSection.style.backgroundColor = "#f0f0f0";
-  commentSection.style.color = "#0f0f0f";
   terBody.style.backgroundColor = "#f0f0f0";
   terBody.style.color = "#0f0f0f";
   kbtn.style.color = "#0f0f0f";
