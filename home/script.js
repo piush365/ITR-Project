@@ -1,7 +1,7 @@
 const home = document.querySelector("#home");
 
 home.addEventListener("click", () => {
-  window.location.href = "index.html";
+  window.location.href = "index.php";
 });
 
 const cmElements = document.querySelectorAll("#cm");
@@ -33,6 +33,22 @@ const eeElements = document.querySelectorAll("#ee");
 eeElements.forEach(eeElement => {
   eeElement.addEventListener("click", () => {
     window.location.href = "../ee/ee-dept.html";
+  });
+});
+
+const entcElements = document.querySelectorAll("#entc");
+
+entcElements.forEach(entcElement => {
+  entcElement.addEventListener("click", () => {
+    window.location.href = "../entc/entc-dept.html";
+  });
+});
+
+const meElements = document.querySelectorAll("#me");
+
+meElements.forEach(meElement => {
+  meElement.addEventListener("click", () => {
+    window.location.href = "../mech/mech-dept.html";
   });
 });
 

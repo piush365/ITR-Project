@@ -27,7 +27,7 @@ manual.addEventListener("click", () => {
 const home = document.querySelector("#home");
 
 home.addEventListener("click", () => {
-  window.location.href = "../home/index.html";
+  window.location.href = "../home/index.php";
 });
 
 const cmElements = document.querySelectorAll("#cm");
@@ -59,6 +59,23 @@ const itElements = document.querySelectorAll("#it");
 itElements.forEach(itElement => {
   itElement.addEventListener("click", () => {
     window.location.href = "../it/it-dept.html";
+  });
+});
+
+
+const entcElements = document.querySelectorAll("#entc");
+
+entcElements.forEach(entcElement => {
+  entcElement.addEventListener("click", () => {
+    window.location.href = "../entc/entc-dept.html";
+  });
+});
+
+const meElements = document.querySelectorAll("#me");
+
+meElements.forEach(meElement => {
+  meElement.addEventListener("click", () => {
+    window.location.href = "../mech/mech-dept.html";
   });
 });
 

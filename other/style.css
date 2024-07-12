@@ -638,6 +638,7 @@ footer {
 }
 
 .slideshow-container {
+  margin-top: 30px;
   max-width: 800px;
   position: relative;
   margin: auto;
@@ -648,8 +649,13 @@ footer {
 }
 
 .mySlides img {
+  margin-top: 30px;
   width: 100%;
+  height: 350px;
   border-radius: 10px;
+  object-fit: cover;
+  object-position: center;
+  border: 1px solid #F5BD02;
 }
 
 .fade {
@@ -659,7 +665,7 @@ footer {
 
 @keyframes fade {
   from {opacity: .4} 
-  to {opacity: 1}
+  to {opacity: 1}
 }
 
 .clg-info {
@@ -736,4 +742,13 @@ footer {
   width: 100%;
   font-size: 1.2em;
   font-weight: bold;
+}
+
+
+.contactus {
+  width: 100%;
+}
+
+.contactus iframe {
+  width: 100%;
 }

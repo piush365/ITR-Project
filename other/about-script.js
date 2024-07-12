@@ -1,7 +1,7 @@
 const home = document.querySelector("#home");
 
 home.addEventListener("click", () => {
-  window.location.href = "../home/index.html";
+  window.location.href = "../home/index.php";
 });
 
 const cmElements = document.querySelectorAll("#cm");
@@ -36,6 +36,22 @@ eeElements.forEach(eeElement => {
   });
 });
 
+const entcElements = document.querySelectorAll("#entc");
+
+entcElements.forEach(entcElement => {
+  entcElement.addEventListener("click", () => {
+    window.location.href = "../entc/entc-dept.html";
+  });
+});
+
+const meElements = document.querySelectorAll("#me");
+
+meElements.forEach(meElement => {
+  meElement.addEventListener("click", () => {
+    window.location.href = "../mech/mech-dept.html";
+  });
+});
+
 const logo2 = document.getElementById("msbte");
 logo2.addEventListener("click", () => {
   window.open("https://msbte.org.in", "blank_");
@@ -59,6 +75,12 @@ const clg = document.querySelector("#clg");
 
 clg.addEventListener("click", () => {
   window.location.href = "ourcollage.html"
+})
+
+const contact = document.querySelector("#contact");
+
+contact.addEventListener("click", () => {
+  window.location.href = "contact.html";
 })
 
 
@@ -133,33 +155,6 @@ dnl.addEventListener('click', () => {
 });
 
 
-document.addEventListener('DOMContentLoaded', function() {
-  const commentForm = document.getElementById('comment-form');
-  const commentInput = document.getElementById('comment-input');
-  const commentsContainer = document.getElementById('comments-container');
-
-  commentForm.addEventListener('submit', function(e) {
-      e.preventDefault();
-      const commentText = commentInput.value.trim();
-
-      if (commentText !== "") {
-          addComment(commentText);
-          commentInput.value = '';
-      }
-  });
-
-  function addComment(text) {
-      const commentElement = document.createElement('div');
-      commentElement.className = 'comment';
-
-      const commentText = document.createElement('p');
-      commentText.textContent = text;
-
-      commentElement.appendChild(commentText);
-      commentsContainer.appendChild(commentElement);
-  }
-});
-
 
 document.getElementById("btn-back-to-top").addEventListener("click", () => {
   window.scroll({
@@ -168,3 +163,17 @@ document.getElementById("btn-back-to-top").addEventListener("click", () => {
   });
 });
 
+
+let slideIndex = 0;
+showSlides();
+
+function showSlides() {
+  let slides = document.getElementsByClassName("mySlides");
+  for (let i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}    
+  slides[slideIndex - 1].style.display = "block";  
+  setTimeout(showSlides, 3500); // Change image every 3 seconds
+}
