@@ -153,34 +153,6 @@ dnl.addEventListener('click', () => {
 });
 
 
-document.addEventListener('DOMContentLoaded', function() {
-  const commentForm = document.getElementById('comment-form');
-  const commentInput = document.getElementById('comment-input');
-  const commentsContainer = document.getElementById('comments-container');
-
-  commentForm.addEventListener('submit', function(e) {
-      e.preventDefault();
-      const commentText = commentInput.value.trim();
-
-      if (commentText !== "") {
-          addComment(commentText);
-          commentInput.value = '';
-      }
-  });
-
-  function addComment(text) {
-      const commentElement = document.createElement('div');
-      commentElement.className = 'comment';
-
-      const commentText = document.createElement('p');
-      commentText.textContent = text;
-
-      commentElement.appendChild(commentText);
-      commentsContainer.appendChild(commentElement);
-  }
-});
-
-
 document.getElementById("btn-back-to-top").addEventListener("click", () => {
   window.scroll({
     top : 0,
@@ -194,3 +166,61 @@ document.getElementById("kclick").addEventListener("click", () => {
     behavior : "smooth"
   });
 });
+
+
+
+document.getElementById("c1").addEventListener("click", () => {
+  window.open("https://www.youtube.com/@ToshibShaikh");
+})
+
+document.getElementById("c2").addEventListener("click", () => {
+  window.open("https://www.youtube.com/@MSBTEHelper");
+})
+
+document.getElementById("c3").addEventListener("click", () => {
+  window.open("https://www.youtube.com/@KharatAcademy");
+})
+
+document.getElementById("c4").addEventListener("click", () => {
+  window.open("https://www.youtube.com/@Msbteallclear");
+})
+
+document.getElementById("c5").addEventListener("click", () => {
+  window.open("https://www.youtube.com/@ApnaCollegeOfficial");
+})
+
+document.getElementById("c6").addEventListener("click", () => {
+  window.open("https://www.youtube.com/@CodeWithHarry");
+})
+
+document.getElementById("c7").addEventListener("click", () => {
+  window.open("https://www.youtube.com/@pradeepgiriacademy");
+})
+
+document.getElementById("c8").addEventListener("click", () => {
+  window.open("https://www.youtube.com/@GateSmashers");
+})
+
+document.getElementById("c9").addEventListener("click", () => {
+  window.open("https://www.youtube.com/@easycivil");
+})
+
+document.getElementById("c10").addEventListener("click", () => {
+  window.open("https://www.youtube.com/@DarshanAcademyformsbte");
+})
+
+document.getElementById("c11").addEventListener("click", () => {
+  window.open("https://www.youtube.com/@MAHARASHTRAENGINEERINGACADEMY");
+})
+
+document.getElementById("c12").addEventListener("click", () => {
+  window.open("https://www.youtube.com/@UrEngineeringFriend");
+})
+
+document.getElementById("c13").addEventListener("click", () => {
+  window.open("https://www.youtube.com/@mechanicalbatch6052");
+})
+
+
+
+
