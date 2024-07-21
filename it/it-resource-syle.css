@@ -4,6 +4,7 @@
   padding: 0;
   box-sizing: border-box;
   font-family: 'Raleway', sans-serif;
+  transition: all linear 0.15s;
 }
 
 
@@ -329,6 +330,14 @@ header {
   font-weight: bolder;
 }
 
+.select-title span {
+  text-decoration: underline;
+}
+
+.select-title i {
+  font-size: 1.3em;
+}
+
 main {
   display: flex;
   flex-direction: column;
@@ -493,7 +502,7 @@ footer {
 }
 
 .f-logo1 {
-  background-image: url("../images/D\ \(1\)\ \(1\).png");
+  background-image: url("../images/dd-logo.svg");
 }
 
 .f-logo2 {

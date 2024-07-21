@@ -1,0 +1,471 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Diploma Dost</title>
+    <!-- css -->
+    <link rel="stylesheet" href="it-resource-syle.css">
+    <!-- font-awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- googlefont -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- title -->
+    <div class="site-name-logo">
+        <img src="../images/dd-logo.svg" alt="Site Logo" class="site-logo" id="logo">
+        <span class="site-name">Diploma Dost</span>
+    </div>
+    <!-- navbar -->
+    <nav class="navbar">
+        <div class="gps-logo"></div>
+        <ul class="menu">
+            <li class="menu-item" id="home">Home</li>
+            <li class="menu-item">
+                Branch
+                <ul class="dropdown">
+                    <li class="dropdown-item" id="cm">CM</li>
+                    <li class="dropdown-item" id="it">IT</li>
+                    <li class="dropdown-item" id="entc">ENTC</li>
+                    <li class="dropdown-item" id="ee">EE</li>
+                    <li class="dropdown-item" id="me">ME</li>
+                    <li class="dropdown-item" id="ce">CE</li>
+                </ul>
+            </li>
+            <li class="menu-item">
+                Resource
+                <ul class="dropdown">
+                    <li class="dropdown-item" id="sy">Syllabus</li>
+                    <li class="dropdown-item" id="pyq">PYQ's</li>
+                    <li class="dropdown-item" id="md">Model Papers</li>
+                    <li class="dropdown-item" id="manual">Lab Manual</li>
+                    <li class="dropdown-item" id="notes">Notes & E-Book</li>
+                    <li class="dropdown-item" id="video">Video Playlist</li>
+                </ul>
+            </li>
+            <li class="menu-item">
+                More
+                <ul class="dropdown">
+                    <li class="dropdown-item" id="abt">About Us</li>
+                    <li class="dropdown-item" id="contact">Contact</li>
+                    <li class="dropdown-item" id="clg">Our College</li>
+                </ul>
+            </li>
+            <li class="menu-item" id="dnl-mode">
+                <i class="fa-solid fa-circle-half-stroke" ></i>
+            </li>
+        </ul>
+        <div class="msbte-logo"></div>
+    </nav>
+    <!-- horizontal division 7:3 -->
+<div class="sec-body">
+    <!-- 70% width section -->
+    <div class="ver-box">
+        <!-- page-title -->
+        <header>
+            <span class="header-content">I - Scheme</span>
+            <div class="resource-title">
+                <span>&vert; Syllabus &vert; Question Papers &vert; Manuals &vert;Model Answer Papers &vert; Notes &vert; E&hyphen;Books &vert; Video Lectures &vert;</span>
+            </div>
+            <span style="text-decoration: double; font-size: 1.2em; border-bottom: 1px solid #0f0f0f;">Path To Success with Diploma Dost</span>
+        </header>
+        <!-- latest-news-section -->
+        <div class="latest-news">
+            <div class="news-title">
+                <span>Latest News</span>
+            </div>
+            <div class="news-ticker">
+                <div class="news-item"><a id="links" href="https://msbte.org.in/file/A.Y.%202024-25_AcademicCalendar_16052024_1104.pdf" target="_blank">Acadmic Calender For A.Y. 2024&hyphen;2025</a></div>
+                <div class="news-item"><a id="links" href="https://msbte.org.in/file/Print-Social&LifeSkillsGuidelines_04012023.pdf" target="_blank">Implementation Of Life & Skill Course</a></div>
+                <div class="news-item"><a id="links" href="https://dte.maharashtra.gov.in/wp-content/uploads/2024/06/Direct-Second-Year-Diploma-Admission-Notice-2024-25-Marathi.pdf" target="_blank">Direct Second Year Admission Notice</a></div>
+            </div>
+        </div>
+        <!-- Department section -->
+    <main>
+      <div class="select-title">
+        <span>Information Technolgy Youtube Vidoe Playlist</span>
+      </div>
+      <div class="resource">
+        <!-- Semester I -->
+<div class="sem1 s">
+    <span>Semester I</span>
+    <table>
+        <thead>
+            <tr>
+                <th scope="col">Subjects</th>
+                <th scope="col">Playlist</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th scope="row">Engineering Graphics - 22002</th>
+                <td>
+                    <button onclick="togglePlaylist('sub1')">Toggle Playlist</button>
+                    <div id="sub1Thumbnail" class="playlist-thumbnail">
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/K7msuqNcRng?list=PLT3bOBUU3L9jxAdcaJ_mBczmOk_sU5Aev" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <th scope="row">English - 22101</th>
+                <td>
+                    <button onclick="togglePlaylist('sub2')">Toggle Playlist</button>
+                    <div id="sub2Thumbnail" class="playlist-thumbnail">
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/videoseries?list=PLtJiJnYB_qyqDxXjC_HXsi8x5VW8bDeCK" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <th scope="row">Basic Science (Phy & Chem) - 22102</th>
+                <td>
+                    <button onclick="togglePlaylist('sub3')">Toggle Playlist</button>
+                    <div id="sub3Thumbnail" class="playlist-thumbnail">
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/videoseries?list=PLs3klXwPQDX2EMaxyMg8wnZPPDl7fejBE" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <th scope="row">Basic Mathematics - 22103</th>
+                <td>
+                    <button onclick="togglePlaylist('sub4')">Toggle Playlist</button>
+                    <div id="sub4Thumbnail" class="playlist-thumbnail">
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/videoseries?list=PL5ZIcm-hgbJM1xRu_2OUf0qRXBNf9Z3n-" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                </td>
+            </tr>
+        </tbody>        
+        
+    </table>
+    <caption>Information Technology Semester I All Subjects Playlist</caption>
+</div>
+
+<!-- Semester II -->
+<div class="sem1 s">
+    <span>Semester II</span>
+    <table>
+        <thead>
+            <tr>
+                <th scope="col">Subjects</th>
+                <th scope="col">Playlist</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th scope="row">Elements of Electrical Engineering - 22215</th>
+                <td>
+                    <button onclick="togglePlaylist('sub5')">Toggle Playlist</button>
+                    <div id="sub5Thumbnail" class="playlist-thumbnail">
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/videoseries?list=PLON3eI_UWjHUfQADHJrrscRdnA_ne3zxn" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <th scope="row">Applied Mathematics - 22224</th>
+                <td>
+                    <button onclick="togglePlaylist('sub6')">Toggle Playlist</button>
+                    <div id="sub6Thumbnail" class="playlist-thumbnail">
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/videoseries?list=PLT3bOBUU3L9jaRSKz0zDxImbxEPcoEceg" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <th scope="row">Basic Electronics - 22225</th>
+                <td>
+                    <button onclick="togglePlaylist('sub7')">Toggle Playlist</button>
+                    <div id="sub7Thumbnail" class="playlist-thumbnail">
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/videoseries?list=PLON3eI_UWjHUL3taTKYIFuUtWnHKWZonV" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <th scope="row">Programming in 'C' - 22226</th>
+                <td>
+                    <button onclick="togglePlaylist('sub8')">Toggle Playlist</button>
+                    <div id="sub8Thumbnail" class="playlist-thumbnail">
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/videoseries?list=PLZPZq0r_RZOOzY_vR4zJM32SqsSInGMwe" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <th scope="row">Webpage Designing using HTML - 22014</th>
+                <td>
+                    <button onclick="togglePlaylist('sub9')">Toggle Playlist</button>
+                    <div id="sub9Thumbnail" class="playlist-thumbnail">
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/videoseries?list=PLfqMhTWNBTe0PY9xunOzsP5kmYIz2Hu7i" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                </td>
+            </tr>
+        </tbody>        
+        
+    </table>
+    <caption>Information Technology Semester II All Subjects Playlist</caption>
+</div>
+
+<!-- Semester III -->
+<div class="sem3 s">
+    <span>Semester III</span>
+    <table>
+        <thead>
+            <tr>
+                <th scope="col">Subjects</th>
+                <th scope="col">Playlist</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th scope="row">Object Oriented Programming Using C++</th>
+                <td>
+                    <button onclick="togglePlaylist('sub10')">Toggle Playlist</button>
+                    <div id="sub10Thumbnail" class="playlist-thumbnail">
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/videoseries?list=PLu0W_9lII9agpFUAlPFe_VNSlXW5uE0YL" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <th scope="row">Data Structure Using 'C'</th>
+                <td>
+                    <button onclick="togglePlaylist('sub11')">Toggle Playlist</button>
+                    <div id="sub11Thumbnail" class="playlist-thumbnail">
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/videoseries?list=PLu0W_9lII9ahIappRPN0MCAgtOu3lQjQi" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <th scope="row">Principles of Database</th>
+                <td>
+                    <button onclick="togglePlaylist('sub12')">Toggle Playlist</button>
+                    <div id="sub12Thumbnail" class="playlist-thumbnail">
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/videoseries?list=PLxCzCOWd7aiFAN6I8CuViBuCdJgiOkT2Y" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <th scope="row">Data Communication</th>
+                <td>
+                    <button onclick="togglePlaylist('sub13')">Toggle Playlist</button>
+                    <div id="sub13Thumbnail" class="playlist-thumbnail">
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/videoseries?list=PLGExcpnVQ_N9InsvSE_EtL556WHYXDb6T" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <th scope="row">Digital Techniques and Microprocessors</th>
+                <td>
+                    <button onclick="togglePlaylist('sub14')">Toggle Playlist</button>
+                    <div id="sub14Thumbnail" class="playlist-thumbnail">
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/videoseries?list=PLGExcpnVQ_N9InsvSE_EtL556WHYXDb6T" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+                
+    </table>
+    <caption>Information Technology Semester III All Subjects Playlist</caption>
+</div>
+
+<!-- Semester IV -->
+<div class="sem4 s">
+    <span>Semester IV</span>
+    <table>
+        <thead>
+            <tr>
+                <th scope="col">Subjects</th>
+                <th scope="col">Playlist</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th scope="row">Java Programming</th>
+                <td>
+                    <button onclick="togglePlaylist('sub15')">Toggle Playlist</button>
+                    <div id="sub15Thumbnail" class="playlist-thumbnail">
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/videoseries?list=PLu0W_9lII9agS67Uits0UnJyrYiXhDS6q" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <th scope="row">Software Engineering</th>
+                <td>
+                    <button onclick="togglePlaylist('sub16')">Toggle Playlist</button>
+                    <div id="sub16Thumbnail" class="playlist-thumbnail">
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/videoseries?list=PLxCzCOWd7aiEed7SKZBnC6ypFDWYLRvB2" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <th scope="row">Database Management</th>
+                <td>
+                    <button onclick="togglePlaylist('sub17')">Toggle Playlist</button>
+                    <div id="sub17Thumbnail" class="playlist-thumbnail">
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/videoseries?list=PLxCzCOWd7aiFAN6I8CuViBuCdJgiOkT2Y" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <th scope="row">GUI Development Using VB.net</th>
+                <td>
+                    <button onclick="togglePlaylist('sub18')">Toggle Playlist</button>
+                    <div id="sub18Thumbnail" class="playlist-thumbnail">
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/videoseries?list=PLOd2apPiwn-amApBElVDAZaF6zaSsBEPF" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+        
+        
+    </table>
+    <caption>Information Technology Semester IV All Subjects Playlist</caption>
+</div>
+
+<!-- Semester V -->
+<div class="sem5 s">
+    <span>Semester V</span>
+    <table>
+        <thead>
+            <tr>
+                <th scope="col">Subjects</th>
+                <th scope="col">Playlist</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th scope="row">Operating Systems</th>
+                <td>
+                    <button onclick="togglePlaylist('sub19')">Toggle Playlist</button>
+                    <div id="sub19Thumbnail" class="playlist-thumbnail">
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/videoseries?list=PLxCzCOWd7aiGz9donHRrE9I3Mwn6XdP8p" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <th scope="row">Advanced Java Programming</th>
+                <td>
+                    <button onclick="togglePlaylist('sub20')">Toggle Playlist</button>
+                    <div id="sub20Thumbnail" class="playlist-thumbnail">
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/videoseries?list=PLlhM4lkb2sEjVsbbZ_kiixY5CcR84IQUg" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <th scope="row">Software Testing</th>
+                <td>
+                    <button onclick="togglePlaylist('sub21')">Toggle Playlist</button>
+                    <div id="sub21Thumbnail" class="playlist-thumbnail">
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/videoseries?list=PL9ooVrP1hQOHYamtWSSlt5jF52WvP0cHl" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <th scope="row">Client Side Scripting Language</th>
+                <td>
+                    <button onclick="togglePlaylist('sub22')">Toggle Playlist</button>
+                    <div id="sub22Thumbnail" class="playlist-thumbnail">
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/videoseries?list=PLGjplNEQ1it_oTvuLRNqXfz_v_0pq6unW" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+        
+    </table>
+    <caption>Information Technology Semester V All Subjects Playlist</caption>
+</div>
+
+<!-- Semester VI -->
+<div class="sem6 s">
+    <span>Semester VI</span>
+    <table>
+        <thead>
+            <tr>
+                <th scope="col">Subjects</th>
+                <th scope="col">Playlist</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th scope="row">Wireless and Mobile Network</th>
+                <td>
+                    <button onclick="togglePlaylist('sub23')">Toggle Playlist</button>
+                    <div id="sub23Thumbnail" class="playlist-thumbnail">
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/videoseries?list=PLjGG94etKypKeb0nzyN9tSs_HCd5c4wXF" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <th scope="row">Mobile Application Development</th>
+                <td>
+                    <button onclick="togglePlaylist('sub24')">Toggle Playlist</button>
+                    <div id="sub24Thumbnail" class="playlist-thumbnail">
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/videoseries?list=PLu0W_9lII9aiL0kysYlfSOUgY5rNlOhUd" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <th scope="row">Web Based Application Development Using PHP</th>
+                <td>
+                    <button onclick="togglePlaylist('sub25')">Toggle Playlist</button>
+                    <div id="sub25Thumbnail" class="playlist-thumbnail">
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/videoseries?list=PLu0W_9lII9aikXkRE0WxDt1vozo3hnmtR" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+        
+    </table>
+    <caption>Information Technology Semester VI All Subjects Playlist</caption>
+</div>
+      
+      </div>    </main>
+        <!-- social media links -->
+        <div class="media-links">
+            <div class="links-title"><span>Links</span></div>
+            <div class="link-items">
+                <a id="links" href="https://www.instagram.com" target="_blank">Instagram</a>
+                <a id="links" href="https://www.facebook.com" target="_blank">Facebook</a>
+                <a id="links" href="https://github.com" target="_blank">Github</a>
+                <a id="links" href="tel:+91 95617 27951" target="_blank">Contact No 95617 27951</a>
+            </div>
+        </div>
+        
+
+    <!-- 30% part -->
+    </div>
+        <!-- msbte news secction -->
+        <div class="news-box">
+            <span>Msbte News</span>
+            <a id="links" href="https://msbte.org.in" target="_blank">Msbte Main Website</a>
+            <a id="links" href="https://msbte.org.in/file/A.Y.%202024-25_AcademicCalendar_16052024_1104.pdf" target="_blank">Acadmic Calender For A.Y. 2024-2025</a>
+            <a id="links" href="https://msbte.org.in/Online_activity.html" target="_blank">MSBTE Online Activity Portal</a>
+            <a id="links" href="https://msbte.org.in/file/State%20Level%20Free%20Webinar%20for%20Awareness%20of%20Exit%20Examination%20of%20Diploma%20in%20Pharmacy_200620240602.jpeg" target="_blank">Online Webinar on Awareness of Diploma in Pharmacy</a>
+            <a id="links" href="https://msbte.org.in/file/Print-Social&LifeSkillsGuidelines_04012023.pdf" target="_blank">Implementation Of Life & Skill Course</a>
+            <a id="links" href="https://msbte.org.in/file/NOTEforRegionalOffices-Final_310520230930.pdf" target="_blank">K-Scheme New Content</a>
+            <a id="links" href="https://dte.maharashtra.gov.in/wp-content/uploads/2024/06/Direct-Second-Year-Diploma-Admission-Notice-2024-25-Marathi.pdf" target="_blank">Direct Second Year Admission Notice</a>
+            <a id="links" href="https://dte.maharashtra.gov.in/wp-content/uploads/2024/04/प्रवेशासाठी-आवश्यक-प्रमाणपत्रे-२०२४-२५.pdf" target="_blank">Notice regarding Documentation Required for A.Y. 2024-2025 Admission</a>
+            <a id="links" href="https://dte.maharashtra.gov.in/wp-content/uploads/2023/10/Website-Notification-Top-Class-scholarship-Scheme-A.Y.-2023-24.pdf" target="_blank">Scholarship Notice for A.Y. 2024-2025</a>
+            <a id="links" href=https://msbte.org.in/results target="_blank">MSBTE Result Portal</a>
+        </div>
+    </div>
+    <!-- 100% width used end of vertical and secondary body -->
+    <!-- footer section -->
+    <footer>
+        <div class="credit-logo">
+            <span>Created by Government Polytechnic, Solapur Students</span>
+                <div class="f-logo">
+                    <div class="f-logo1 l" id="logof"></div>
+                    <div class="f-logo2 l" id="msbte"></div>
+                    <div class="f-logo3 l" id="gps"></div>
+                </div>
+        </div>    
+        <div class="f-content">
+            <a href="../other/about.html">About Us</a>
+            <a href="../other/contct.html">Contact Us</a>
+            <button onclick="scrollToTop()" id="btn-back-to-top" title="Go to top">Page Up</button>
+        </div>        
+    </footer>
+    <script src="it-dept-script.js"></script>
+</body>
+</html>

@@ -1,9 +1,14 @@
 <?php
 // Database connection
-$servername = "localhost";
-$username = "root";
-$password = "";
-$dbname = "userdb";
+$servername = "sql211.infinityfree.com";
+$username = "if0_36944769";
+$password = "diplomadost";
+$dbname = "if0_36944769_userdb";
+
+// $servername = "localhost";
+// $username = "root";
+// $password = "";
+// $dbname = "userdb";
 
 // Create connection
 $conn = new mysqli($servername, $username, $password, $dbname);
@@ -40,11 +45,11 @@ if ($result->num_rows > 0) {
         exit();
     } else {
         // Invalid password
-        echo "Invalid password. <a href='login.html'>Try again</a>";
+        echo "Invalid password. <a href='Signup.html'>Try again</a>";
     }
 } else {
     // No user found with that username
-    echo "No user found with that username. <a href='login.html'>Try again</a>";
+    echo "No user found with that username. <a href='Signup.html'>Try again</a>";
 }
 
 // Close statement and database connection

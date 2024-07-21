@@ -5,7 +5,7 @@ session_start();
 // Check if user is logged in
 if (!isset($_SESSION['loggedin']) || $_SESSION['loggedin'] !== true) {
     // Redirect to login page if not logged in
-    header('Location: ../enter/login.html');
+    header('Location: ../enter/Signup.html');
     exit();
 }
 
@@ -140,6 +140,38 @@ if (!isset($_SESSION['loggedin']) || $_SESSION['loggedin'] !== true) {
             <p>Download Mechanical Engineering Study Material</p>
           </div>
         </div>
+        <div class="cm-k">
+                <span>K-Scheme Study Material</span>
+                <p>Computer Technolgy</p>
+              <div class="ks">
+                <div class="cm-k-s1" >
+                    <span id="k">Semester I</span>
+                    <a href="https://drive.google.com/drive/folders/1Ed8Q3Hk6145S7a885CMSTwbH2RNYx-6Z?usp=drive_link" target="_blank">Fundamentals of ICT - 311001</a>
+                    <a href="https://drive.google.com/drive/folders/1YU40S0wwHJnueJOzmSEZdMDz5mekOOi5?usp=drive_link" target="_blank">English - 311303</a>
+                    <a href="https://drive.google.com/drive/folders/1Zuv6rbY8FV3vkeT5qZJOC406PZOk8PoN?usp=drive_link" target="_blank">Engineering Graphics - 311008</a>
+                    <a href="https://drive.google.com/drive/folders/1lxFvidUrpdm_ToNZ_kTvWa2YzlKDc4zW?usp=drive_link" target="_blank">Basic Science - 311305</a>
+                    <a href="https://drive.google.com/drive/folders/1iWeTlr54n_I-T84VQdtT0KDhKXRNU_M1?usp=drive_link" target="_blank">Basic Mathematics - 311302</a>
+                </div>
+                <div class="cm-k-s2" >
+                    <span id="k">Semester II</span>
+                    <a href="https://drive.google.com/drive/folders/1Aha48On92I0Dkn_2lR58aQ58risTLSDO?usp=drive_link" target="_blank">Web Page Desinging - 312004</a>
+                    <a href="https://drive.google.com/drive/folders/18LBcsN4sJdMX0m-42WkRbabAndOIdepx?usp=drive_link" target="_blank">Social and Life Skills - 312003</a>
+                    <a href="https://drive.google.com/drive/folders/1maIPnVVHlfQAFbq-zQBVSFsoh3QCUtV-?usp=drive_link" target="_blank">Programming in 'C' - 312303</a>
+                    <a href="https://drive.google.com/drive/folders/1wu8ZIFlbDeN_RjODCl0OySTfcvpzK7eY?usp=drive_link" target="_blank">Professional Communication - 312002</a>
+                    <a href="https://drive.google.com/drive/folders/1qvds4tBNpgPXukDTSe8YYyj6keG_YX9U?usp=drive_link" target="_blank">Linux Basic - 312001</a>
+                    <a href="https://drive.google.com/drive/folders/1ofQL2xkK9SoPPSjmly8HuFywL8U3uCdA?usp=drive_link" target="_blank">Basic Electrical and Electronics - 312302</a>
+                    <a href="https://drive.google.com/drive/folders/1PPgR42DKqD6Qs9j5XxcZhwDrOpExt9Zg?usp=drive_link" target="_blank">Applied Mathematics - 312301</a>
+                </div>
+              </div>  
+            </div>
+
+
+
+
+
+
+
+
         <!-- material-info section -->
         <div class="material-info">
           <div class="pyq material">
@@ -311,29 +343,6 @@ if (!isset($_SESSION['loggedin']) || $_SESSION['loggedin'] !== true) {
           </div>
         </div>
       </div>
-      
-      <div class="cm-k">
-                <span>K-Scheme Study Material</span>
-                <p>Computer Technolgy</p>
-                <div class="cm-k-s1" >
-                    <span id="k">Semester I</span>
-                    <a href="https://drive.google.com/drive/folders/1Ed8Q3Hk6145S7a885CMSTwbH2RNYx-6Z?usp=drive_link" target="_blank">Fundamentals of ICT - 311001</a>
-                    <a href="https://drive.google.com/drive/folders/1YU40S0wwHJnueJOzmSEZdMDz5mekOOi5?usp=drive_link" target="_blank">English - 311303</a>
-                    <a href="https://drive.google.com/drive/folders/1Zuv6rbY8FV3vkeT5qZJOC406PZOk8PoN?usp=drive_link" target="_blank">Engineering Graphics - 311008</a>
-                    <a href="https://drive.google.com/drive/folders/1lxFvidUrpdm_ToNZ_kTvWa2YzlKDc4zW?usp=drive_link" target="_blank">Basic Science - 311305</a>
-                    <a href="https://drive.google.com/drive/folders/1iWeTlr54n_I-T84VQdtT0KDhKXRNU_M1?usp=drive_link" target="_blank">Basic Mathematics - 311302</a>
-                </div>
-                <div class="cm-k-s2" >
-                    <span id="k">Semester II</span>
-                    <a href="https://drive.google.com/drive/folders/1Aha48On92I0Dkn_2lR58aQ58risTLSDO?usp=drive_link" target="_blank">Web Page Desinging - 312004</a>
-                    <a href="https://drive.google.com/drive/folders/18LBcsN4sJdMX0m-42WkRbabAndOIdepx?usp=drive_link" target="_blank">Social and Life Skills - 312003</a>
-                    <a href="https://drive.google.com/drive/folders/1maIPnVVHlfQAFbq-zQBVSFsoh3QCUtV-?usp=drive_link" target="_blank">Programming in 'C' - 312303</a>
-                    <a href="https://drive.google.com/drive/folders/1wu8ZIFlbDeN_RjODCl0OySTfcvpzK7eY?usp=drive_link" target="_blank">Professional Communication - 312002</a>
-                    <a href="https://drive.google.com/drive/folders/1qvds4tBNpgPXukDTSe8YYyj6keG_YX9U?usp=drive_link" target="_blank">Linux Basic - 312001</a>
-                    <a href="https://drive.google.com/drive/folders/1ofQL2xkK9SoPPSjmly8HuFywL8U3uCdA?usp=drive_link" target="_blank">Basic Electrical and Electronics - 312302</a>
-                    <a href="https://drive.google.com/drive/folders/1PPgR42DKqD6Qs9j5XxcZhwDrOpExt9Zg?usp=drive_link" target="_blank">Applied Mathematics - 312301</a>
-                </div>
-            </div>
     </div>
   </div>
   <!-- 100% width used end of vertical and secondary body -->

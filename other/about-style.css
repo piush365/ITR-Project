@@ -4,6 +4,7 @@
   padding: 0;
   box-sizing: border-box;
   font-family: 'Raleway', sans-serif;
+  transition: all linear 0.15s;
 }
 
 
@@ -533,7 +534,7 @@ footer {
 }
 
 .f-logo1 {
-  background-image: url("../images/D\ \(1\)\ \(1\).png");
+  background-image: url("../images/dd-logo.svg");
 }
 
 .f-logo2 {

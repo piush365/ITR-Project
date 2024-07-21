@@ -44,7 +44,7 @@ const ceElements = document.querySelectorAll("#ce");
 
 ceElements.forEach(ceElement => {
   ceElement.addEventListener("click", () => {
-    window.location.href = "ee-dept.html";
+    window.location.href = "../ce/ce-dept.html";
   });
 });
 

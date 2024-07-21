@@ -4,6 +4,7 @@
   padding: 0;
   box-sizing: border-box;
   font-family: 'Raleway', sans-serif;
+  transition: all linear 0.15s;
 }
 
 
@@ -174,6 +175,7 @@
 }
 
 
+
 .ver-box {
   display: flex;
   flex-direction: column;
@@ -319,13 +321,20 @@ header {
   /* background-color: #f0f0f0; */
   display: flex;
   align-content: center;
-  justify-content: center;
-  width: 100%;
-  height: 20px;
+  justify-content: space-around;
+  width: 50%;
+  height: 60px;
   padding: 20px;
   font-size: 1.4em;
-  text-decoration: underline;
   font-weight: bolder;
+}
+
+.select-title span {
+  text-decoration: underline;
+}
+
+.select-title i {
+  font-size: 1.3em;
 }
 
 main {
@@ -533,7 +542,7 @@ footer {
 }
 
 .f-logo1 {
-  background-image: url("../images/D\ \(1\)\ \(1\).png");
+  background-image: url("../images/dd-logo.svg");
 }
 
 .f-logo2 {

@@ -34,7 +34,7 @@ const ceElements = document.querySelectorAll("#ce");
 
 ceElements.forEach(ceElement => {
   ceElement.addEventListener("click", () => {
-    window.location.href = "ee-dept.html";
+    window.location.href = "../ce/ce-dept.html";
   });
 });
 
@@ -58,7 +58,7 @@ const eeElements = document.querySelectorAll("#ee");
 
 eeElements.forEach(eeElement => {
   eeElement.addEventListener("click", () => {
-    window.location.href = "ee-dept.html";
+    window.location.href = "../ee/ee-dept.html";
   });
 });
 
@@ -67,7 +67,7 @@ const entcElements = document.querySelectorAll("#entc");
 
 entcElements.forEach(entcElement => {
   entcElement.addEventListener("click", () => {
-    window.location.href = "../entc/entc-dept.html";
+    window.location.href = "entc-dept.html";
   });
 });
 

@@ -162,7 +162,7 @@ document.getElementById("btn-back-to-top").addEventListener("click", () => {
 
 document.getElementById("kclick").addEventListener("click", () => {
   window.scroll({
-    top : 700,
+    top : 950,
     behavior : "smooth"
   });
 });
