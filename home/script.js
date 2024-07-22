@@ -1,7 +1,10 @@
-const home = document.querySelector("#home");
+const home = document.querySelectorAll("#home");
 
-home.addEventListener("click", () => {
-  window.location.href = "index.php";
+home.forEach(h => {
+  h.addEventListener("click", () => {
+    window.location.href = "index.php";
+  });
+  
 });
 
 const cmElements = document.querySelectorAll("#cm");
@@ -80,16 +83,11 @@ const secBody = document.querySelector(".sec-body");
 const terBody = document.querySelector(".ter-body");
 const topHead = document.querySelector(".site-name-logo");
 const topHeadLogo = document.querySelectorAll("#logo");
-const logof = document.getElementById("logof");
 const links = document.querySelectorAll("#links");
+const links2 = document.querySelectorAll("#links2");
 const k = document.querySelectorAll("#k");
 const kbtn = document.getElementById("kclick");
 
-
-
-logof.addEventListener("click", () => {
-  window.location.href = "index.html";
-})
 
 // Function to set dark mode
 const setDarkMode = () => {
@@ -106,6 +104,9 @@ const setDarkMode = () => {
   });
   links.forEach(link => {
     link.style.color = "#F5BD02";
+  });
+  links2.forEach(link2 => {
+    link2.style.color = "#F5BD02";
   });
 };
 
@@ -124,6 +125,9 @@ const setLightMode = () => {
   });
   links.forEach(link => {
     link.style.color = "#000080";
+  });
+  links2.forEach(link2 => {
+    link2.style.color = "#f0f0f0";
   });
 };
 

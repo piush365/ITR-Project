@@ -1,14 +1,14 @@
 <?php
 // Database connection
-$servername = "sql211.infinityfree.com";
-$username = "if0_36944769";
-$password = "diplomadost";
-$dbname = "if0_36944769_userdb";
+// $servername = "sql211.infinityfree.com";
+// $username = "if0_36944769";
+// $password = "diplomadost";
+// $dbname = "if0_36944769_userdb";
 
-// $servername = "localhost";
-// $username = "root";
-// $password = "";
-// $dbname = "userdb";
+$servername = "localhost";
+$username = "root";
+$password = "";
+$dbname = "userdb";
 
 // Create connection
 $conn = new mysqli($servername, $username, $password, $dbname);
