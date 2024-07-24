@@ -9,7 +9,6 @@
 
 body{
     background-color:#e0f7fa;
-    /* background: linear-gradient(to right, #e2e2e2, #c9d6ff); */
     display: flex;
     align-items: center;
     justify-content: center;
@@ -163,7 +162,6 @@ body{
 .toggle{
     background-color: #000080;
     height: 100%;
-    /* background: linear-gradient(to right, #512da8, #000080); */
     color: #fff;
     position: relative;
     left: -100%;
@@ -219,7 +217,6 @@ button.hidden:hover{
     background-color: #f5bd02;   
     color: black;
     border: 1px solid transparent;
-    /* box-shadow: 0 9px 15px #ccc; */
 
 }
 
@@ -228,7 +225,6 @@ button:hover{
     transition: 0.15s;
     background-color: #f5bd02;
     color: black;
-    /* box-shadow: 0 9px 15px #333; */
 }
 
 .head{

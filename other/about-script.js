@@ -1,7 +1,7 @@
 const home = document.querySelector("#home");
 
 home.addEventListener("click", () => {
-  window.location.href = "../home/index.php";
+  window.location.href = "../index.php";
 });
 
 const cmElements = document.querySelectorAll("#cm");

@@ -87,6 +87,7 @@
   cursor: pointer;
   margin-right: 20px;
   font-size: 1.2em;
+  display: flex;
 }
 
 .menu-item:hover {
@@ -125,42 +126,77 @@
   display: block;
 }
 
-/* Search Bar Styling */
-.search-container {
-  display: flex;
-  align-items: center;
-}
-
-.search-input {
-  padding: 5px;
-  border: none;
-  border-radius: 3px 0 0 3px;
-}
-
-.search-container:active {
-  transform: none;
-}
-
-.search-container img {
-  width: max-content;
-  padding: 1px;
-  border: none;
-  border-radius: 0 3px 3px 0;
-  background-color: #F5BD02;
-  color: black;
+label {
+  width:70px;
+  height:28px;
+  position: relative;
+  display: block;
+  background: #ebebeb;
+  border-radius: 28px;
+  box-shadow: inset 0px 5px 15px rgba(0,0,0,0.4), inset 0px -5px 15px rgba(255,255,255,0.4);
   cursor: pointer;
 }
 
-.search-container:hover {
-  background-color: transparent;
+
+label:after {
+  content: "";
+  width:25px;
+  height: 25px;
+  position: absolute;
+  top:1.5px;
+  left:3px;
+  background: linear-gradient(180deg,#F5BD02,#d8860b);
+  border-radius: 25px;
+  box-shadow: 0px 5px 10px rgba(0,0,0,0.2);
 }
 
-.search-container img:hover {
-  background-color: #f5bc028a;
+input {
+  width: 0;
+  height: 0;
+  visibility: hidden;
 }
 
-.search-container img:active {
-  transform: translateY(2px);
+input:checked + label {
+  background: #242424;
+}
+input:checked + label:after {
+  left:68px;
+  transform: translateX(-100%);
+  background: linear-gradient(180deg,#777,#3a3a3a);
+}
+label, label:after {
+  transition: 0.3s
+}
+
+label:active:after{ 
+  width: 40px; 
+}
+
+label svg {
+  position: absolute;
+  width: 20px;
+  top: -386px;
+  z-index: 100;
+}
+
+label svg.sun {
+  left: 5px;
+  fill: #fff;
+  transition: 0.3s;
+}
+
+label svg.moon {
+  left: 45px;
+  fill: #7e7e7e;
+  transition: 0.3s;
+}
+
+label:checked +label svg.sun {
+  fill: #7e7e7e;
+}
+
+label:checked +label svg.moon {
+  fill: #fff;
 }
 
 
@@ -193,7 +229,6 @@ header {
   height: max-content;
   justify-content: space-between;
   align-items: center;
-  /* background-color: #f0f0f0; */
   padding: 20px;
   border-bottom: 1px solid #ccc;
 }
@@ -215,7 +250,6 @@ header {
   width: 25%;
   height: 700px;
   padding: 20px;
-  /* background-color: #f0f0f0; */
   border-bottom: 1px solid #ccc;
   border-right: 1px solid #ccc;
   display: flex;
@@ -280,7 +314,6 @@ header {
   white-space: nowrap;
   width: 100%;
   padding: 10px 0;
-  /* background-color: #f0f0f0; */
   box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
 }
 
@@ -288,7 +321,7 @@ header {
   display: inline-block;
   padding: 0 50px;
   line-height: 30px;
-  animation: ticker 10s linear infinite;
+  animation: ticker 15s linear infinite;
 }
 
 .news-item  a {
@@ -317,7 +350,6 @@ header {
 
 /*Resource select title */
 .select-title {
-  /* background-color: #f0f0f0; */
   display: flex;
   align-content: center;
   justify-content: space-around;
@@ -435,61 +467,6 @@ main {
 
 .link-items a:hover {
   text-decoration: underline;
-}
-
-
-
-
-/* comment section */
-.comment-section {
-  padding: 20px;
-  /* background-color: #f0f0f0; */
-  border-radius: 5px;
-  box-shadow: 2 2 10px rgba(0, 0, 0, 0.1);
-  width: 100%;
-}
-
-.comment-section h2 {
-  margin-bottom: 20px;
-  color: #f0f0f0;
-  background-color: #000080;
-  padding: 10px;
-  width: max-content;
-}
-
-
-#comment-form {
-  display: flex;
-  flex-direction: column;
-  padding: 20px;
-}
-
-#comment-input {
-  resize: none;
-  height: 100px;
-  margin-bottom: 10px;
-  padding: 10px;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-}
-
-#comment-form button {
-  background-color: #28a745;
-  color: white;
-  padding: 10px;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-  width: 20%;
-  align-self: flex-end;
-}
-
-#comment-form button:hover {
-  background-color: #218838;
-}
-
-#comments-container {
-  margin-top: 20px;
 }
 
 

@@ -37,7 +37,7 @@ manual.addEventListener("click", () => {
 const home = document.querySelector("#home");
 
 home.addEventListener("click", () => {
-  window.location.href = "../home/index.php";
+  window.location.href = "../index.php";
 });
 
 const ceElements = document.querySelectorAll("#ce");
@@ -146,35 +146,6 @@ dnl.addEventListener('click', () => {
   }
 });
 
-
-// function togglePlaylist(id) {
-//   var playlist = document.getElementById(id);
-//   if (playlist.style.display === "none") {
-//     playlist.style.display = "block";
-//     var iframe = playlist.querySelector('iframe');
-//     if (iframe && !iframe.src) {
-//       iframe.src = iframe.getAttribute('data-src');
-//     }
-//   } else {
-//     playlist.style.display = "none";
-//     // Optional: Stop the video when hiding the playlist
-//     var iframe = playlist.querySelector('iframe');
-//     if (iframe) {
-//       iframe.src = '';
-//     }
-//   }
-// }
-
-
-
-// function togglePlaylist(id) {
-//   var thumbnail = document.getElementById(id + 'Thumbnail');
-//   if (thumbnail.style.display === 'none' || thumbnail.style.display === '') {
-//       thumbnail.style.display = 'block';
-//   } else {
-//       thumbnail.style.display = 'none';
-//   }
-// }
 
 function togglePlaylist(id) {
   var thumbnail = document.getElementById(id + 'Thumbnail');

@@ -41,7 +41,7 @@ if ($result->num_rows > 0) {
         $_SESSION['username'] = $user; // Optionally store username in session
 
         // Redirect to the index.php or home page
-        header('Location: ../home/index.php');
+        header('Location: index.php');
         exit();
     } else {
         // Invalid password

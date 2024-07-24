@@ -11,7 +11,7 @@ const cmElements = document.querySelectorAll("#cm");
 
 cmElements.forEach(cmElement => {
   cmElement.addEventListener("click", () => {
-    window.location.href = "../cm/cm-dept.html";
+    window.location.href = "cm/cm-dept.html";
   });
 });
 
@@ -19,7 +19,7 @@ const ceElements = document.querySelectorAll("#ce");
 
 ceElements.forEach(ceElement => {
   ceElement.addEventListener("click", () => {
-    window.location.href = "../ce/ce-dept.html";
+    window.location.href = "ce/ce-dept.html";
   });
 });
 
@@ -27,7 +27,7 @@ const itElements = document.querySelectorAll("#it");
 
 itElements.forEach(itElement => {
   itElement.addEventListener("click", () => {
-    window.location.href = "../it/it-dept.html";
+    window.location.href = "it/it-dept.html";
   });
 });
 
@@ -35,7 +35,7 @@ const eeElements = document.querySelectorAll("#ee");
 
 eeElements.forEach(eeElement => {
   eeElement.addEventListener("click", () => {
-    window.location.href = "../ee/ee-dept.html";
+    window.location.href = "ee/ee-dept.html";
   });
 });
 
@@ -43,7 +43,7 @@ const entcElements = document.querySelectorAll("#entc");
 
 entcElements.forEach(entcElement => {
   entcElement.addEventListener("click", () => {
-    window.location.href = "../entc/entc-dept.html";
+    window.location.href = "entc/entc-dept.html";
   });
 });
 
@@ -51,7 +51,7 @@ const meElements = document.querySelectorAll("#me");
 
 meElements.forEach(meElement => {
   meElement.addEventListener("click", () => {
-    window.location.href = "../mech/mech-dept.html";
+    window.location.href = "mech/mech-dept.html";
   });
 });
 
@@ -69,13 +69,13 @@ const abt = document.querySelectorAll("#abt");
 
 abt.forEach(a => {
   a.addEventListener("click", () => {
-    window.location.href = "../other/about.html";
+    window.location.href = "other/about.html";
   });
 });
 
 
 const clg = document.getElementById("clg").addEventListener("click", () => {
-  window.location.href = "../other/ourcollage.html";
+  window.location.href = "other/ourcollage.html";
 })
 
 const dnl = document.querySelector("#dnl-mode");
@@ -100,7 +100,7 @@ const setDarkMode = () => {
   topHead.style.backgroundColor = "#121212";
   topHead.style.color = "#f0f0f0";
   topHeadLogo.forEach(logo => {
-    logo.src = "../images/D (3).png";
+    logo.src = "images/D (3).png";
   });
   links.forEach(link => {
     link.style.color = "#F5BD02";
@@ -121,7 +121,7 @@ const setLightMode = () => {
   topHead.style.backgroundColor = "#f0f0f0";
   topHead.style.color = "#0f0f0f";
   topHeadLogo.forEach(logo => {
-    logo.src = "../images/dd-logo.svg";
+    logo.src = "images/dd-logo.svg";
   });
   links.forEach(link => {
     link.style.color = "#000080";
