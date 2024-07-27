@@ -86,6 +86,83 @@
   font-size: 1.2em;
 }
 
+input {
+  display: none;
+}
+
+.display {
+  width: 80px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* background: white; */
+}
+
+label {
+  width: 60px;
+  height: 25px;
+  border-radius: 25px;
+  background: #F3F3F3;
+  box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.05) inset;
+  cursor: pointer;
+  position: relative;
+}
+
+.circle {
+  width: 20px;
+  height: 20px;
+  border-radius: 20px;
+  background: white;
+  box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.05),
+  -10px -10px 30px rgba(0, 0, 0, 0.05) inset;
+  position: absolute;
+  top: 50%;
+  left: 0%;
+  transform: translate(10%, -50%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+svg {
+  width: 20px;
+  position: absolute;
+}
+.sun {
+  color: #FFD600;
+  margin-top: 0%;
+  opacity: 1;
+}
+.moon {
+  margin-top: -150%;
+  color: white;
+  opacity: 0;
+}
+
+input[type=checkbox]:checked + .display label {
+  background: #1F1F21;
+  box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.5) inset;
+}
+input[type=checkbox]:checked + .display label .circle {
+  left: 100%;
+  transform: translate(-110%, -50%);
+  background: #2C2C2F;
+  box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.5),
+  -10px -10px 30px rgba(0, 0, 0, 0.5) inset;
+}
+input[type=checkbox]:checked + .display label .circle .sun {
+  margin-top: 150%;
+  opacity: 0;
+}
+input[type=checkbox]:checked + .display label .circle .moon {
+  margin-top: 0%;
+  opacity: 1;
+}
+label:active .circle {
+  width: 40px;
+}
+
 .menu-item:hover {
   background-color: #f5bc0280;
 }

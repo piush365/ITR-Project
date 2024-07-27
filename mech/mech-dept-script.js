@@ -123,15 +123,17 @@ if (count % 2 === 0) {
   setDarkMode();
 }
 
+// Set the checkbox state based on localStorage
+dnl.checked = isDarkModeEnabled;
+
 // Add event listener for the dark mode toggle button
-dnl.addEventListener('click', () => {
-  count++;
-  if (count % 2 === 0) {
-    setLightMode();
-    localStorage.setItem('darkModeEnabled', 'false');
-  } else {
+dnl.addEventListener('change', () => {
+  if (dnl.checked) {
     setDarkMode();
     localStorage.setItem('darkModeEnabled', 'true');
+  } else {
+    setLightMode();
+    localStorage.setItem('darkModeEnabled', 'false');
   }
 });
 
@@ -179,13 +181,19 @@ const abt = document.querySelectorAll("#abt");
 
 abt.forEach(a => {
   a.addEventListener("click", () => {
-    window.location.href = "../home/about.html";
+    window.location.href = "../other/about.html";
   });
 });
 
 
 const clg = document.getElementById("clg").addEventListener("click", () => {
   window.location.href = "../other/ourcollage.html";
+})
+
+const contact = document.querySelector("#contact");
+
+contact.addEventListener("click", () => {
+  window.location.href = "../other/contact.html";
 })
 
 

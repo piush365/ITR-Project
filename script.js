@@ -76,6 +76,12 @@ abt.forEach(a => {
 
 const clg = document.getElementById("clg").addEventListener("click", () => {
   window.location.href = "other/ourcollage.html";
+});
+
+const contact = document.querySelector("#contact");
+
+contact.addEventListener("click", () => {
+  window.location.href = "other/contact.html";
 })
 
 const dnl = document.querySelector("#dnl-mode");
@@ -87,7 +93,6 @@ const links = document.querySelectorAll("#links");
 const links2 = document.querySelectorAll("#links2");
 const k = document.querySelectorAll("#k");
 const kbtn = document.getElementById("kclick");
-
 
 // Function to set dark mode
 const setDarkMode = () => {
@@ -144,17 +149,20 @@ if (count % 2 === 0) {
   setDarkMode();
 }
 
+// Set the checkbox state based on localStorage
+dnl.checked = isDarkModeEnabled;
+
 // Add event listener for the dark mode toggle button
-dnl.addEventListener('click', () => {
-  count++;
-  if (count % 2 === 0) {
-    setLightMode();
-    localStorage.setItem('darkModeEnabled', 'false');
-  } else {
+dnl.addEventListener('change', () => {
+  if (dnl.checked) {
     setDarkMode();
     localStorage.setItem('darkModeEnabled', 'true');
+  } else {
+    setLightMode();
+    localStorage.setItem('darkModeEnabled', 'false');
   }
 });
+
 
 
 document.getElementById("btn-back-to-top").addEventListener("click", () => {
