@@ -262,22 +262,24 @@ if (!isset($_SESSION['loggedin']) || $_SESSION['loggedin'] !== true) {
       </div>
 
       <!-- commentbox -->
-      <!-- <div id="comment-box">
-        <h2>Leave a Comment</h2>
-        <form method="POST" action="comment.php">
-            <textarea name="comment" required></textarea>
-            <button type="submit">Submit</button>
+      <div id="comment-section">
+        <form id="commentForm" method="POST" action="submit_comment.php">
+            <textarea name="comment" id="comment" cols="30" rows="10" placeholder="Enter your comment here..." required></textarea>
+            <button type="submit">Submit Comment</button>
         </form>
-        <form method="POST" action="index.php">
-            <button name="show_comments">Show Comments</button>
-        </form>
+        <div id="message">
+            <?php
+            if (isset($_GET['status'])) {
+                $status = $_GET['status'];
+                if ($status == 'success') {
+                    echo "<script>alert('Comment added successfully!');</script>";
+                } elseif ($status == 'error') {
+                    echo "<script>alert('There was an error adding your comment.');</script>";
+                }
+            }
+            ?>
+        </div>
     </div>
-    
-    <?php
-    if ($_SERVER['REQUEST_METHOD'] == 'POST' && isset($_POST['show_comments'])) {
-        include 'comment.php';
-    }
-    ?> -->
 
       <!-- 30% part -->
     </div>
@@ -386,7 +388,13 @@ if (!isset($_SESSION['loggedin']) || $_SESSION['loggedin'] !== true) {
       <button onclick="scrollToTop()" id="btn-back-to-top" title="Go to top">Page Up</button>
     </div>
   </footer>
-  <script src="script.js"></script>
+  <script src="script.js">
+    <?php
+        if (!empty($alert)) {
+            echo $alert;
+        }
+        ?>
+  </script>
 </body>
 
 </html>
