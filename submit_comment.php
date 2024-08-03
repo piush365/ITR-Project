@@ -13,18 +13,18 @@ if ($conn->connect_error) {
 }
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
-    $comment = htmlspecialchars($_POST['comment']);
+    // Get the comment from the POST request
+    $comment = $_POST['comment'];
 
-    $stmt = $conn->prepare("INSERT INTO comments (comment) VALUES (?)");
-    $stmt->bind_param("s", $comment);
+    // Directly use the comment in the SQL query
+    $sql = "INSERT INTO comments (comment) VALUES ('$comment')";
 
-    if ($stmt->execute()) {
+    // Execute the query
+    if ($conn->query($sql) === TRUE) {
         header("Location: index.php?status=success");
     } else {
         header("Location: index.php?status=error");
     }
-
-    $stmt->close();
 }
 
 $conn->close();
