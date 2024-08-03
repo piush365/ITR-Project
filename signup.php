@@ -4,41 +4,38 @@ $servername = "localhost";
 $username = "root";
 $password = "";
 $dbname = "userdb";
-// lol
-// Create connection
+
 $conn = new mysqli($servername, $username, $password, $dbname);
 
-// Check connection
-if ($conn->connect_error) {
+// Checking connection
+if ($conn->connect_error == true) {
     die("Connection failed: " . $conn->connect_error);
 }
 
-// Get form data
+// Getting user data from the sign up form
 $user = $_POST['username'];
 $email = $_POST['email'];
-$pass = password_hash($_POST['password'], PASSWORD_BCRYPT);
+$pass = $_POST['password'];
 
-// Insert data into database
-$sql = "INSERT INTO users (username, email, password) VALUES (?, ?, ?)";
-$stmt = $conn->prepare($sql);
-$stmt->bind_param("sss", $user, $email, $pass);
+// Inserting user's submitted data in users database
+$sql = "INSERT INTO users (username, email, password) VALUES ('$username', '$email', '$password')";
 
-if ($stmt->execute()) {
-    // Start session
+// Executing insert command
+if ($conn->query($sql) === TRUE) {
+    // Starting session
     session_start();
 
-    // Set session variables
+    // Set session variables so user can access other pages throughout
     $_SESSION['loggedin'] = true;
-    $_SESSION['username'] = $user; // Optionally store username in session
+    $_SESSION['username'] = $username;
 
-    // Redirect to the index.php or home page
+    // send user to home page
     header('Location: ../home/index.php');
     exit();
 } else {
     echo "Error: " . $sql . "<br>" . $conn->error;
 }
 
-// Close statement and database connection
-$stmt->close();
+// closing users database connection
 $conn->close();
 ?>
