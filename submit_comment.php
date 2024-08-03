@@ -21,9 +21,9 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
     // Execute the query
     if ($conn->query($sql) === TRUE) {
-        header("Location: index.php?status=success");
+        header("Location: home.php?status=success");
     } else {
-        header("Location: index.php?status=error");
+        header("Location: home.php?status=error");
     }
 }
 

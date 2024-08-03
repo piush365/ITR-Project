@@ -37,7 +37,7 @@ manual.addEventListener("click", () => {
 const home = document.querySelector("#home");
 
 home.addEventListener("click", () => {
-  window.location.href = "../index.php";
+  window.location.href = "../home.php";
 });
 
 const ceElements = document.querySelectorAll("#ce");

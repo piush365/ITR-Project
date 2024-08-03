@@ -254,34 +254,35 @@ if (!isset($_SESSION['loggedin']) || $_SESSION['loggedin'] !== true) {
       <div class="media-links">
         <div class="links-title"><span>Links</span></div>
         <div class="link-items">
-          <a id="links" href="https://www.instagram.com" target="_blank">Instagram</a>
-          <a id="links" href="https://www.facebook.com" target="_blank">Facebook</a>
-          <a id="links" href="https://github.com" target="_blank">Github</a>
-          <a id="links" href="tel:+91 95617 27951" target="_blank">Contact No 95617 27951</a>
+          <a id="links" href="https://www.instagram.com/diploma_dost" target="_blank">Instagram</a>
+          <a id="links" href="https://www.facebook.com/diplomadost" target="_blank">Facebook</a>
+          <a id="links" href="https://github.com/piush365/ITR-Project" target="_blank">Github</a>
+          <a id="links" href="tel:+91 95617 27951" target="_blank">Contact No</a>
         </div>
       </div>
 
       <!-- commentbox -->
-      <div id="comment-section">
-        <form id="commentForm" method="POST" action="submit_comment.php">
+      <div class="comment-title"><span class="c-title">Comment Section</span></div>
+        <div class="comment-section">
+          <form class="commentForm" method="POST" action="submit_comment.php">
             <textarea name="comment" id="comment" cols="30" rows="10" placeholder="Enter your comment here..." required></textarea>
             <button type="submit">Submit Comment</button>
-        </form>
-        <div id="message">
+          </form>
+          <div class="message">
             <?php
             if (isset($_GET['status'])) {
-                $status = $_GET['status'];
-                if ($status == 'success') {
-                    echo "<script>alert('Comment added successfully!');</script>";
-                } elseif ($status == 'error') {
-                    echo "<script>alert('There was an error adding your comment.');</script>";
-                }
+              $status = $_GET['status'];
+              if ($status == 'success') {
+                echo "<script>alert('Comment added successfully!');</script>";
+              } elseif ($status == 'error') {
+                echo "<script>alert('There was an error adding your comment.');</script>";
+              }
             }
             ?>
+          </div>
         </div>
-    </div>
-
-      <!-- 30% part -->
+        
+        <!-- 30% part -->
     </div>
     <!-- msbte news secction -->
     <div class="ter-body">

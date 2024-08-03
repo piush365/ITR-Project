@@ -33,7 +33,7 @@ if ($result->num_rows > 0) {
         $_SESSION['username'] = $user; 
 
         // jump user to  home page
-        header('Location: index.php');
+        header('Location: home.php');
         exit();
     } else {
         echo "Invalid password. <a href='Signup.html'>Try again</a>";

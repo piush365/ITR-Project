@@ -2,7 +2,7 @@ const home = document.querySelectorAll("#home");
 
 home.forEach(h => {
   h.addEventListener("click", () => {
-    window.location.href = "index.php";
+    window.location.href = "home.php";
   });
   
 });
