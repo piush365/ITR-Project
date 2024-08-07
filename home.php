@@ -385,7 +385,7 @@ if (!isset($_SESSION['loggedin']) || $_SESSION['loggedin'] !== true) {
     </div>
     <div class="f-content">
       <a href="other/about.html">About Us</a>
-      <a href="other/contct.html">Contact Us</a>
+      <a href="other/contact.html">Contact Us</a>
       <button onclick="scrollToTop()" id="btn-back-to-top" title="Go to top">Page Up</button>
     </div>
   </footer>

@@ -617,6 +617,6 @@ td button:active {
 }
 
 .playlist-thumbnail {
-  display: none; /* Hide initially */
+  display: none; 
   margin-top: 10px;
 }

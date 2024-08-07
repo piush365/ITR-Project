@@ -86,7 +86,7 @@
   font-size: 1.2em;
 }
 
-input {
+/* input {
   display: none;
 }
 
@@ -96,7 +96,7 @@ input {
   display: flex;
   align-items: center;
   justify-content: center;
-  /* background: white; */
+  background: white;
 }
 
 label {
@@ -161,7 +161,7 @@ input[type=checkbox]:checked + .display label .circle .moon {
 }
 label:active .circle {
   width: 40px;
-}
+} */
 
 .menu-item:hover {
   background-color: #f5bc0280;
@@ -823,10 +823,101 @@ footer {
 }
 
 
-.contactus {
-  width: 100%;
+.contactus{
+  margin: 70px;
 }
 
-.contactus iframe {
+.contact-heading{
+  margin-bottom: 40px;
+}
+
+.contact-heading h2{
+  text-align: center;
+  text-decoration: underline;
+}
+
+.contactus h3{
+  align-items: start;
+  border-bottom: 1px solid black;
+}
+
+.our-email{
+  margin-bottom: 40px;
+}
+
+.our-phone{
+  margin-bottom: 40px;
+}
+
+.our-social-media{
+  margin-bottom: 40px;
+}
+
+/* .contact-form{
+  border: 1px solid black;
+} */
+
+
+.contact-form {
+  background: #fff;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  max-width: 1000px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-form h2 {
+  text-align: center;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.contact-form form {
+  display: flex;
+  flex-direction: column;
+  /* align-content: center; */
+}
+
+.contact-form form div {
+  margin-bottom: 15px;
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-form label {
+  display: block;
+  margin-bottom: 5px;
+  color: #333;
+}
+
+.contact-form input[type="text"], .contact-form input[type="email"], .contact-form textarea {
   width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+.contact-form input[type="text"]:focus, .contact-form input[type="email"]:focus, .contact-form textarea:focus {
+  border-color: #007BFF;
+  outline: none;
+}
+
+.contact-form button[type="submit"] {
+  background-color: #007BFF;
+  color: #fff;
+  padding: 10px 15px;
+  border: none;
+  width: 300px;
+  border-radius: 4px;
+  cursor: pointer;
+  align-self: center;
+  /* width: 100%; */
+}
+
+.contact-form button[type="submit"]:hover {
+  background-color: #0056b3;
 }

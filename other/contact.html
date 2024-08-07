@@ -43,8 +43,8 @@
                     <li class="dropdown-item" id="clg">Our College</li>
                 </ul>
             </li>
-            <li class="menu-item dnl">
-                <!-- <i class="fa-solid fa-circle-half-stroke"></i> -->
+            <!-- <li class="menu-item dnl">
+                <i class="fa-solid fa-circle-half-stroke"></i>
                 <input type="checkbox" id="dnl-mode">
         
             <div class="display">
@@ -59,7 +59,7 @@
                     </div>
                 </label>
             </div>
-              </li>
+              </li> -->
         </ul>
         <div class="msbte-logo"></div>
     </nav>
@@ -88,9 +88,52 @@
         </div>
         <!-- Department section -->
     <main>
-      <div class="contactus">
+      <!-- <div class="contactus">
         <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSfE3M8OMLlvTpsLaLeFR2FrKXjShG6C5TjFDW9kjj5zRFjRdw/viewform?embedded=true" width="1500px" height="1000px" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
-      </div>
+      </div> -->
+
+      <div class="contactus">
+        <br>
+        <div class="contact-heading">
+            <h2>Contact Us</h2><br><br>
+            <p>We value your feedback and are here to assist you with any questions or concerns. Please feel free to reach out to us through any of the following methods:</p>
+        </div>
+        <div class="our-email">
+            <h3>Email</h3><br>
+            <p>For general inquiries, suggestions, or support, please email us at: <a href="mailto:diplomadost@gmial.com">diplomadost@gmail.com</a></p>
+            <p>For technical issues or website-related questions, contact our technical team at: <a href="mailto:diplomadost@gmail.com">diplomadost@gmail.com</a></p>
+        </div>
+        <div class="our-phone">
+            <h3>Phone</h3><br>
+            <p>You can also reach us by phone any time:<br>
+                Monday to Friday: 9:00 AM - 6:00 PM IST<br>
+            Phone: +91-9561727951</p>
+        </div>
+
+      <div class="contact-form">
+        <h2>Send Us a Message</h2>
+        <form action="submit_form.php" method="post">
+            <div class="cus-name">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name">
+            </div>
+            <br>
+            <div class="cue-email">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <br>
+            <div class="cus-message">
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="5" required></textarea>
+            </div>
+            <br>
+            <div class="submit-btn">
+                <button type="submit">Send Message</button>
+            </div>
+        </form>
+    </div>
+
       
     </main>
         <!-- social media links -->
